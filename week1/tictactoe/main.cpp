@@ -1,4 +1,5 @@
 #include <iostream>
+#include <curses.h>
 #include "tictac.hpp"
 
 using namespace std;

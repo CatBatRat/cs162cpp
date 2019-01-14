@@ -26,6 +26,8 @@ int gameLoop() {
         bool exit = false;
         do {
             getMove( g );
+            for( int l=0; l<40; l++ )
+                cout << "\n";
             showBoard( g );
             if( checkWin( g ) or checkDraw( g ) )
                 exit = true;

@@ -1,0 +1,21 @@
+# depslib dependency file v1.0
+1547407513 source:/home/tadrith/lcc/cis162cpp/week1/tictactoe/main.cpp
+	<iostream>
+	"tictac.hpp"
+
+1547414665 source:/home/tadrith/lcc/cis162cpp/week1/tictactoe/dialog.cpp
+	<iostream>
+	<map>
+	<string>
+	"tictac.hpp"
+
+1547405057 /home/tadrith/lcc/cis162cpp/week1/tictactoe/tictac.hpp
+	<string>
+
+1547416462 source:/home/tadrith/lcc/cis162cpp/week1/tictactoe/game.cpp
+	<cstring>
+	<iomanip>
+	<iostream>
+	<map>
+	"tictac.hpp"
+

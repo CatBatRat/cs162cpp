@@ -26,6 +26,9 @@ int gameLoop() {
         bool exit = false;
         do {
             getMove( g );
+
+            /* Insert blank lines above the board display to make things things
+             * a little less crowed */
             for( int l=0; l<40; l++ )
                 cout << "\n";
             showBoard( g );

@@ -2,7 +2,7 @@
 #include <curses.h>
 #include "tictac.hpp"
 
-using namespace std;
+using std::cin;
 
 int main() {
 

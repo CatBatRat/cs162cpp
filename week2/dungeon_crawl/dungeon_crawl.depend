@@ -1,0 +1,12 @@
+# depslib dependency file v1.0
+1547815895 source:/home/tadrith/lcc/cis162cpp/week2/dungeon_crawl/main.cpp
+	<iostream>
+	"dungeon.hpp"
+
+1547815895 /home/tadrith/lcc/cis162cpp/week2/dungeon_crawl/dungeon.hpp
+
+1547815447 source:/home/tadrith/lcc/cis162cpp/week2/dungeon_crawl/logic.cpp
+	<iostream>
+	<iomanip>
+	<string>
+

@@ -1,6 +1,7 @@
 #include <cstring>
 #include <iomanip>
 #include <iostream>
+#include <map>
 #include "tictac.hpp"
 
 using std::cin;
@@ -108,6 +109,10 @@ void getMove( struct Game &g ) {
 }
 
 bool checkWin( struct Game &g ) {
+    /* Using from struct Game
+     *      g.board
+     *      g.wins
+     *      g.turn*/
     int (&b)[SIZE][SIZE] = g.board;
     bool win = false;
     // Check rows for win

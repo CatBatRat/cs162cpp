@@ -32,8 +32,13 @@
 			<Add option="-Wall" />
 			<Add option="-fexceptions" />
 		</Compiler>
+		<Unit filename="display.cpp" />
 		<Unit filename="dungeon.hpp" />
+		<Unit filename="funcs.cpp" />
+		<Unit filename="logic.cpp" />
 		<Unit filename="main.cpp" />
+		<Unit filename="qolife.hpp" />
+		<Unit filename="tools.cpp" />
 		<Extensions>
 			<code_completion />
 			<envvars />

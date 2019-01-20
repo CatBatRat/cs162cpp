@@ -1,5 +1,4 @@
 #include <iostream>
-#include <random>
 #include "dungeon.hpp"
 
 using std::cout;
@@ -16,12 +15,13 @@ int main()
 
     Monster * mon;
     mon = new Monster[NUMMONS];
-    for( int m=0; m<NUMMONS; m++ )
-        mon = new Monster;
 
     initRoom( room );
-    for( int m=0; m<3; m++ )
+    //for( int m=0; m<NUMMONS; m++ )
+    //    mon = new Monster;
+    for( int m=0; m<NUMMONS; m++ ) {
         mon[m].initMon( room );
+    }
 
     do {
         showRoom( room );

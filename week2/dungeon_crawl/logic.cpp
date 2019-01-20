@@ -37,8 +37,9 @@ void getMoves( Dungeon & r, Monster * mon ) {
 
         if( y<DUNY and y>=0 and x<DUNX and x>=0 and checkMove( r, y, x ) ) {
             movePlayer( r, y, x );
-            for( int m=0; m<3; m++ )
+            for( int m=0; m<NUMMONS; m++ ) {
                 mon[m].moveMon( r );
+            }
             showRoom( r );
             cout << endl;
             _sleep( 300 );

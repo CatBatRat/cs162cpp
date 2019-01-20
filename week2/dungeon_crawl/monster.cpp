@@ -1,17 +1,15 @@
-#include <iostream>
-#include <random>
 #include "dungeon.hpp"
 
-
 void Monster::initMon( Dungeon & room ) {
-    mony = rand() % DUNY;
-    monx = rand() % DUNX;
-    while( room.area[mony][monx] != '.' ) {
+    bool freespot = false;
+    while( !freespot ) {
         mony = rand() % DUNY;
         monx = rand() % DUNX;
+        if( room.area[mony][monx] == '.' or mony >= DUNY or monx >= DUNX ) {
+            freespot = true;
+            room.area[mony][monx] = MON;
+        }
     }
-    room.area[mony][monx] = MON;
-    std::cout << "I'm a monster @: " << mony << monx << std::endl;
 }
 
 void Monster::moveMon( Dungeon & room ) {
@@ -36,7 +34,4 @@ void Monster::moveMon( Dungeon & room ) {
             room.area[mony][monx] = MON;
         }
     }
-    //mony += y;
-    //monx += x;
-    std::cout << "I'm a monster @: " << mony << monx << std::endl;
 }

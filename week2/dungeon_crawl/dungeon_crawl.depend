@@ -1,12 +1,54 @@
 # depslib dependency file v1.0
-1547815895 source:/home/tadrith/lcc/cis162cpp/week2/dungeon_crawl/main.cpp
+1547964715 source:/home/tadrith/lcc/cis162cpp/week2/dungeon_crawl/main.cpp
 	<iostream>
 	"dungeon.hpp"
 
-1547815895 /home/tadrith/lcc/cis162cpp/week2/dungeon_crawl/dungeon.hpp
+1547964587 /home/tadrith/lcc/cis162cpp/week2/dungeon_crawl/dungeon.hpp
+	<iostream>
+	<string>
+	<cstdio>
+	"qolife.hpp"
 
-1547815447 source:/home/tadrith/lcc/cis162cpp/week2/dungeon_crawl/logic.cpp
+1547959805 source:/home/tadrith/lcc/cis162cpp/week2/dungeon_crawl/logic.cpp
 	<iostream>
 	<iomanip>
 	<string>
+	"dungeon.hpp"
+
+1547959805 source:/home/tadrith/lcc/cis162cpp/week2/dungeon_crawl/funcs.cpp
+	<iostream>
+	<iomanip>
+	<vector>
+	<cstdio>
+	<locale>
+	<limits>
+	<sstream>
+	<thread>
+	<chrono>
+	"qolife.hpp"
+
+1547959805 /home/tadrith/lcc/cis162cpp/week2/dungeon_crawl/qolife.hpp
+	<iostream>
+	<iomanip>
+	<vector>
+	<cstdio>
+	<string>
+
+1547954942 source:/home/tadrith/lcc/cis162cpp/week2/dungeon_crawl/monster.cpp
+	<iostream>
+	<random>
+	"dungeon.hpp"
+
+1547959805 source:/home/tadrith/lcc/cis162cpp/week2/dungeon_crawl/room.cpp
+	<iostream>
+	<iomanip>
+	"dungeon.hpp"
+
+1547959805 source:/home/tadrith/lcc/cis162cpp/week2/dungeon_crawl/tools.cpp
+	<iostream>
+	<vector>
+	<string>
+	<thread>
+	<chrono>
+	"qolife.hpp"
 

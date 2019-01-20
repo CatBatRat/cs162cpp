@@ -3,15 +3,15 @@
 
 #include <iostream>
 #include <string>
-#include <random>
+#include <cstdio>
 #include "qolife.hpp"
 
-const int DUNY = 10;
-const int DUNX = 14;
+const int DUNY = 16;
+const int DUNX = 20;
 
 /* The chars used in the construction of the dungeon. */
 const char DOT = '.', MON = '&', TRES = '$', PLAYER = '@', BORD = '#';
-const int NUMMONS = 4;
+const int NUMMONS = 10;
 
 struct Dungeon {
 
@@ -38,10 +38,11 @@ class Monster {
     private:
         int mony = 0;
         int monx = 0;
-        bool chase = false;
     public:
         void initMon( Dungeon & room );
+
         void moveMon( Dungeon & room );
+
 };
 
 void getMoves( Dungeon & room, Monster * mon );

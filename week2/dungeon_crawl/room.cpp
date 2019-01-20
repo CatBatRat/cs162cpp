@@ -16,6 +16,8 @@ void initRoom( Dungeon & r ) {
     r.px = dRand('x');
     r.area[r.py][r.px] = PLAYER;
     placeObj( r, TRES );
+    for( int d=0; d<5; d++ )
+        placeObj( r, BORD );
 }
 
 void placeObj( Dungeon & r, char obj ) {
@@ -28,7 +30,7 @@ void placeObj( Dungeon & r, char obj ) {
 }
 
 void showRoom( Dungeon & r ) {
-    for( int l=0; l<300; l++ )
+    for( int l=0; l<20; l++ )
         cout << "\n";
     /* There is a space between each element of the board, so the top and
      * bottom borders need to be twice the width + 3 */

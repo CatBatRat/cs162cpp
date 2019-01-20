@@ -7,15 +7,17 @@ using std::cout;
 using std::cin;
 using std::endl;
 
-void movePlayer( Dungeon & r ) {
+void getMoves( Dungeon & r, Monster * mon ) {
     std::string moves = "";
     cout << "Input the sequence of moves you would like to make." << endl;
     cin >> moves;
     _cin_clear();
 
     for( auto m : moves ) {
+
         int y = r.py;
         int x = r.px;
+
         switch( m ) {
             case 'w':
                 y--;
@@ -29,9 +31,14 @@ void movePlayer( Dungeon & r ) {
             case 'd':
                 x++;
                 break;
+            default:
+                cout << "You trip over you own feet becuase you forgot how to run." << endl;
         }
-        if( y<DUNY and y>=0 and x<DUNX and x>=0 ) {
-            updateDungeon( r, y, x );
+
+        if( y<DUNY and y>=0 and x<DUNX and x>=0 and checkMove( r, y, x ) ) {
+            movePlayer( r, y, x );
+            for( int m=0; m<3; m++ )
+                mon[m].moveMon( r );
             showRoom( r );
             cout << endl;
             _sleep( 300 );
@@ -44,14 +51,14 @@ void movePlayer( Dungeon & r ) {
     }
 }
 
-void updateDungeon( Dungeon & r, int y, int x ) {
-    r.area[r.py][r.px] = FILL;
+void movePlayer( Dungeon & r, int y, int x ) {
+    r.area[r.py][r.px] = DOT;
     r.area[y][x] = PLAYER;
     r.py = y;
     r.px = x;
 }
 
-/* Generate multiple random numbers in ranges based on predetermined chars */
+/* Generate multiple random numbers in ranges called by chars */
 int dRand( char cord ) {
     int temp;
     if( cord == 'y' ) {
@@ -61,4 +68,22 @@ int dRand( char cord ) {
         temp = rand() % DUNX;
     }
     return temp;
+}
+
+bool checkMove( Dungeon & r, int y, int x ) {
+    bool valid = false;
+    if( r.area[y][x] == DOT ) {
+        valid = true;
+    }
+    if( r.area[y][x] == TRES ) {
+        r.end = true;
+        r.winner = true;
+        valid = true;
+    }
+    if( r.area[y][x] == MON ) {
+        r.end = true;
+        r.loser = true;
+        valid = false;
+    }
+    return valid;
 }

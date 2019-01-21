@@ -1,4 +1,4 @@
-CPP=main.cpp logic.cpp room.cpp tools.cpp funcs.cpp monster.cpp
+CPP=main.cpp logic.cpp room.cpp tools.cpp funcs.cpp monster.cpp display.cpp
 HEADER=dungeon.hpp qolife.hpp
 OUT=dungeon-crawl
 

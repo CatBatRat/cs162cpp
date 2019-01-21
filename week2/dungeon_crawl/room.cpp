@@ -28,19 +28,3 @@ void placeObj( Dungeon & r, char obj ) {
     }
     r.area[y][x] = obj;
 }
-
-void showRoom( Dungeon & r ) {
-    for( int l=0; l<20; l++ )
-        cout << "\n";
-    /* There is a space between each element of the board, so the top and
-     * bottom borders need to be twice the width + 3 */
-    cout << std::string(DUNX*2+3, BORD) << endl;
-    for( int y=0; y<DUNY; y++ ) {
-        cout << BORD << " ";
-        for( int x=0; x<DUNX; x++ ) {
-            cout << r.area[y][x] << " ";
-        }
-        cout << BORD << endl;
-    }
-    cout << std::string(DUNX*2+3, BORD) << endl;
-}

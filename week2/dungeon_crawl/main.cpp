@@ -10,32 +10,46 @@ int main()
     srand(static_cast<int>(time(NULL)));
 
     std::string state = "";
+    bool replay = false;
 
+    /* Dungeon instance created. */
     Dungeon room;
 
     Monster * mon;
     mon = new Monster[NUMMONS];
 
-    initRoom( room );
-    //for( int m=0; m<NUMMONS; m++ )
-    //    mon = new Monster;
-    for( int m=0; m<NUMMONS; m++ ) {
-        mon[m].initMon( room );
-    }
-
     do {
-        showRoom( room );
-        getMoves( room, mon );
-    } while( !room.end );
-    if( room.winner ) {
-        cout << "You Won!!!!!!!! Goooooooooaaaaallllllll!!!!!!!!" << endl;
-    }
-    if( room.loser ) {
-        cout << "The wall turns out to be a monster that was taking a nap.\n"
-                "It wakes up and eats you. Let sleeping monsters lie!" << endl;
-    }
+        /* Create the room */
+        initRoom( room );
 
-    _wait_enter();
+        for( int m=0; m<NUMMONS; m++ ) {
+            mon[m].initMon( room );
+        }
 
+        instructions( room );
+
+        do {
+            showRoom( room, "legend" );
+            getMoves( room, mon );
+        } while( !room.end );
+        if( room.winner ) {
+            cout << "You Won!!!!!!!! Goooooooooaaaaallllllll!!!!!!!!" << endl;
+        }
+        if( room.loser ) {
+            cout << "The wall turns out to be a monster blocking you way.\n"
+                "It eats you and takes the treasure." << endl;
+        }
+
+        _wait_enter();
+        char input;
+        cout << "Would you like to play again?" << endl;
+        cin >> input;
+        _cin_clear();
+        if( input == 'y' or input == 'Y' )
+            replay = true;
+    } while( replay );
+
+    cout << "Thank you for playing!" << endl;
+    _sleep( 2000 );
     return 0;
 }

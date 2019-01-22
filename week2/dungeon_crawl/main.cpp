@@ -12,15 +12,16 @@ int main()
     std::string state = "";
     bool replay = false;
 
-    /* Dungeon instance created. */
-    Dungeon room;
-
-    Monster * mon;
-    mon = new Monster[NUMMONS];
-
     do {
+        /* Dungeon instance created. */
+        Dungeon room;
+
         /* Create the room */
         initRoom( room );
+
+        Monster * mon;
+        mon = new Monster[NUMMONS];
+
 
         for( int m=0; m<NUMMONS; m++ ) {
             mon[m].initMon( room );
@@ -47,6 +48,8 @@ int main()
         _cin_clear();
         if( input == 'y' or input == 'Y' )
             replay = true;
+	else
+            replay = false;
     } while( replay );
 
     cout << "Thank you for playing!" << endl;

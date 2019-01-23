@@ -15,6 +15,10 @@ int main()
     do {
         /* Dungeon instance created. */
         Dungeon room;
+        cout << "player y " << room.py << endl;
+        cout << "player x " << room.px << endl;
+        cout << "winner " << room.winner << endl;
+        cout << "loser " << room.loser << endl;
 
         /* Create the room */
         initRoom( room );

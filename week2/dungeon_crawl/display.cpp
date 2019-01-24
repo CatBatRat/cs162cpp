@@ -43,23 +43,27 @@ void showRoom( Dungeon & r, string item ) {
 std::stringstream sideBar( string item ) {
     std::stringstream out;
 
-    if( item=="intro" )
+    if( item=="intro" ) {
         out << "This is a simple dungeon crawl.\n"
-              "Your goal is to get to the end\n"
-              "without running into, or getting\n"
-              "trapped by enemies.\n\n"
+            "Your goal is to get to the end\n"
+            "without running into, or getting\n"
+            "trapped by enemies.\n\n"
 
-              "Input using 'wasd' as a sequence,\n"
-              "and your moves will match.\n\n"
-              "Good luck!!!";
+            "Input using 'wasd' as a sequence,\n"
+            "and your moves will match.\n\n"
+            "Good luck!!!";
+    }
 
-    if( item=="instructions" )
+    if( item=="instructions" ) {
         out << "w = Up\n\na = Left\n\ns = Down\n\nd = Right";
+    }
 
-    if( item=="legend" )
+    if( item=="legend" ) {
         out << PLAYER << " = Player\n\n"
             << MON    << " = Monster\n\n"
             << BORD   << " = Wall/Obstacle\n\n"
             << TRES   << " = Treasure";
+    }
+
     return out;
 }

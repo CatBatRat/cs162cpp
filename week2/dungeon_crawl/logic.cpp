@@ -12,8 +12,9 @@ void getMoves( Dungeon & r, Monster * mon ) {
     cout << "Input the sequence of moves you would like to make." << endl;
     cin >> moves;
     _cin_clear();
+    moves = _to_lower(moves);
 
-    for( auto m : moves ) {
+    for( char m : moves ) {
 
         int y = r.py;
         int x = r.px;
@@ -21,20 +22,16 @@ void getMoves( Dungeon & r, Monster * mon ) {
         /* switch on each character of the string the player entered to
          * determine direction of movement. */
         switch( m ) {
-            case 'W':
-            case 'w':
+            case UP:
                 y--;
                 break;
-            case 'A':
-            case 'a':
+            case LEFT:
                 x--;
                 break;
-            case 'S':
-            case 's':
+            case DOWN:
                 y++;
                 break;
-            case 'D':
-            case 'd':
+            case RIGHT:
                 x++;
                 break;
             default:
@@ -48,14 +45,14 @@ void getMoves( Dungeon & r, Monster * mon ) {
          * */
         if( y<DUNY and y>=0 and x<DUNX and x>=0 and checkMove( r, y, x ) ) {
             movePlayer( r, y, x );
-            for( int m=0; m<NUMMONS; m++ ) {
-                mon[m].moveMon( r );
+            for( int i=0; i<NUMMONS; i++ ) {
+                mon[i].moveMon( r );
             }
             showRoom( r, "" );
             cout << endl;
             /* Pauses for a brief period so it looks like the players movement
              * is being animated across the board. */
-            _sleep( 300 );
+            _sleep( SPEED );
         }
         else {
             /* I like this one. */

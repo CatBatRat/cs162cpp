@@ -8,13 +8,17 @@
 #include <sstream>
 #include "qolife.hpp"
 
-/* consts controling dungeon size. */
+/* consts controlling dungeon size. */
 const int DUNY = 12;
 const int DUNX = 16;
+
+/* Rate at which the dungeon update per move in milliseconds. */
+const int SPEED = 300;
 
 /* The chars used in the construction of the dungeon. When changing these make
  * sure to update the legend in the 'showRoom' function. */
 const char DOT = '.', MON = '&', TRES = '$', PLAYER = '@', BORD = '#';
+const char UP = 'w', DOWN = 's', LEFT = 'a', RIGHT = 'd';
 const int NUMMONS = 8;
 
 struct Dungeon {
@@ -47,8 +51,8 @@ class Monster {
         /* Set the starting position of the monster and record its current
          * position for later use. */
         void initMon( Dungeon & room );
-        /* Move the monster toward the player on a semirandom axis and avoid
-         * stepping on obsticles or the player. Player must run into the
+        /* Move the monster toward the player on a semi-random axis and avoid
+         * stepping on obstacles or the player. Player must run into the
          * monsters, but the monsters have a habit of boxing the player in so
          * there is no other option if you not careful. */
         void moveMon( Dungeon & room );
@@ -61,9 +65,9 @@ void instructions( Dungeon & room );
 /* Get moves from the player and call 'movePlayer' on valid options. */
 void getMoves( Dungeon & room, Monster * mon );
 
-/* Creates the starting room and fill with dots, places the player and and
- * other contents of the dungeon room. Since placement is done using the board
- * y x as rand bounds there is no need for bounds checking. */
+/* Creates the starting room and fill with dots, places the player and other
+ * contents of the dungeon room. Since placement is done using the board y x as
+ * rand bounds there is no need for bounds checking. */
 void initRoom( Dungeon & room );
 
 /* The current state of the room and show content to the side that is fed into

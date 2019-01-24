@@ -132,10 +132,10 @@ double long _g_positive( std::string prompt ) {
 /* Iterate over a given string and change to lower case. I wonder if I should
  * guard against excessively long strings? */
 std::string _to_lower(std::string& str) {
-    std::string os;
+    std::string lower;
     int len = str.size();
     for( auto x=0;x<len;x++ ) {
-        os += tolower(str[x]);
+        lower += tolower(str[x]);
     }
-    return os;
+    return lower;
 }

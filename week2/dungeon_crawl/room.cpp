@@ -9,12 +9,15 @@ using std::endl;
 void initRoom( Dungeon & r ) {
     for( int y=0; y<DUNY; y++ ) {
         for( int x=0; x<DUNX; x++ ) {
-            r.area[y][x] = DOT;
+            if( y==0 or y==DUNY-1 )
+                r.area[y][x] = BORD;
+            else if( x==0 or x==DUNX-1 )
+                r.area[y][x] = BORD;
+            else
+                r.area[y][x] = DOT;
         }
     }
-    r.py = dRand('y');
-    r.px = dRand('x');
-    r.area[r.py][r.px] = PLAYER;
+    placeObj( r, PLAYER );
     placeObj( r, TRES );
     for( int d=0; d<5; d++ )
         placeObj( r, BORD );
@@ -27,4 +30,8 @@ void placeObj( Dungeon & r, char obj ) {
         x = dRand('x');
     }
     r.area[y][x] = obj;
+    if( obj == PLAYER ) {
+        r.py=y;
+        r.px=x;
+    }
 }

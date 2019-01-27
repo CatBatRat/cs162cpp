@@ -44,7 +44,8 @@ struct Dungeon {
  * them stepping on each other. */
 class Monster {
     private:
-        /* Last position of the monster. */
+        /* Last known psition of the monster instance to be used when selecting
+         * the next move. */
         int mony = 0;
         int monx = 0;
     public:
@@ -77,7 +78,8 @@ void showRoom( Dungeon & room, std::string item );
 /* Contains text for display to the side of the dungeon map. Returned as
  * sstream so each line can be iterated over rather than having to turn each
  * string into an array/vector then iterating over that. */
-std::stringstream sideBar(std::string item);
+//std::stringstream sideBar( std::string item );
+void sideBar(std::stringstream & side, std::string item );
 
 /* Generate multiple random numbers in ranges called by chars */
 int dRand( char cord );

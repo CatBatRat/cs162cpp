@@ -51,10 +51,6 @@ int main()
     cout << "your results are: ";
     printAllSubsets("abcd");
     cout << endl << endl;
-    cout << "And just because I think it's crazy how quickly this can become such a monster\n"
-         << "Here's my first name in sets" << endl;
-    printAllSubsets("alexander");
-    cout << endl << endl;
 
 
     cout << "Done testing subsets" << endl << endl;

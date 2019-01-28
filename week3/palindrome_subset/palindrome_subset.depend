@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1548578577 source:/home/tadrith/lcc/cis162cpp/week3/palindrome_subset/main.cpp
+	<iostream>
+	"recursion.hpp"
+
+1548568242 /home/tadrith/lcc/cis162cpp/week3/palindrome_subset/recursion.hpp
+	<string>
+
+1548578641 source:/home/tadrith/lcc/cis162cpp/week3/palindrome_subset/recursion.cpp
+	"recursion.hpp"
+	<iostream>
+	<sstream>
+

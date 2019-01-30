@@ -43,7 +43,7 @@ int main()
 
     cout << "subsets of abc are: abc, ab, ac, bc, a, b, c" << endl;
     cout << "your results are: ";
-    printAllSubsets("abc");
+    printAllSubsets("cba");
     cout << endl << endl;;
 
 

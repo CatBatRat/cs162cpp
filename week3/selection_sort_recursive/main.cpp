@@ -25,34 +25,17 @@ int main() {
 
 void recursiveSelection( int sorted[], int size, int select, int index )
 {
-
-    // Find the smallest number.
-    bool isSwap = false;
     int smallest = sorted[index];
-    for ( int i=index; i<size; i++ )
-    {
-        if ( smallest > sorted[i] )
-        {
+    for ( int i=index; i<size; i++ ) {
+        if ( smallest > sorted[i] ) {
             smallest = sorted[i];
-            isSwap = true;
             select = i;
         }
     }
-    if ( isSwap )
-    {
-        cout << "Swap " << sorted[index] << " with " << sorted[select] << endl;
+    if ( select > 0 ) {
         std::swap( sorted[index], sorted[select] );
-        for ( int n=index; n<size; n++ )
-            if ( n==index or n==select )
-                cout << "[" << sorted[n] << "]";
-            else
-                cout << " " << sorted[n] << " ";
-        cout << endl;
     }
-    else
-        cout << "No need to swap at index " << index << endl;
-    if ( index < size-2 )
-    {
-        recursiveSelection( sorted, size, select, ++index );
+    if ( index < size-2 ) {
+        recursiveSelection( sorted, size, select=-1, ++index );
     }
 }

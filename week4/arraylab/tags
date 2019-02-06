@@ -1,0 +1,29 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/45968eff/
+ALL	makefile	/^ALL=$(CC) arraylab.hpp$/;"	m
+AMAX	arraylab.hpp	/^const int AMIN = 10, AMAX = 20, RMIN = 1, RMAX = 99, LOOPS = 3;$/;"	v	typeref:typename:const int
+AMIN	arraylab.hpp	/^const int AMIN = 10, AMAX = 20, RMIN = 1, RMAX = 99, LOOPS = 3;$/;"	v	typeref:typename:const int
+CC	makefile	/^CC=main.cpp sorter.cpp thearray.cpp findin.cpp$/;"	m
+LOOPS	arraylab.hpp	/^const int AMIN = 10, AMAX = 20, RMIN = 1, RMAX = 99, LOOPS = 3;$/;"	v	typeref:typename:const int
+OUT	makefile	/^OUT=numberfinder$/;"	m
+RMAX	arraylab.hpp	/^const int AMIN = 10, AMAX = 20, RMIN = 1, RMAX = 99, LOOPS = 3;$/;"	v	typeref:typename:const int
+RMIN	arraylab.hpp	/^const int AMIN = 10, AMAX = 20, RMIN = 1, RMAX = 99, LOOPS = 3;$/;"	v	typeref:typename:const int
+__ARRAY_LAB__	arraylab.hpp	/^#define __ARRAY_LAB__$/;"	d
+binSearch	findin.cpp	/^bool binSearch( int * arr, int size, int fnd, int index )$/;"	f	typeref:typename:bool
+c	makefile	/^c: $(CC)$/;"	t
+clean	makefile	/^clean:$/;"	t
+displayArray	thearray.cpp	/^void displayArray( int arr[], int * size, int line )$/;"	f	typeref:typename:void
+findInArray	findin.cpp	/^void findInArray( int *arr, int *size )$/;"	f	typeref:typename:void
+findSmallest	sorter.cpp	/^int findSmallest( int * numset, int size, int index )$/;"	f	typeref:typename:int
+getSize	thearray.cpp	/^int getSize()$/;"	f	typeref:typename:int
+iterSelectionSort	sorter.cpp	/^void iterSelectionSort( int * arr, int * size )$/;"	f	typeref:typename:void
+main	main.cpp	/^int main() {$/;"	f	typeref:typename:int
+makeArray	thearray.cpp	/^int * makeArray( int * size )$/;"	f	typeref:typename:int *
+r	makefile	/^r: $(OUT)$/;"	t
+rt	makefile	/^rt: $(OUT)$/;"	t
+swapper	sorter.cpp	/^void swapper( int * left, int * right )$/;"	f	typeref:typename:void

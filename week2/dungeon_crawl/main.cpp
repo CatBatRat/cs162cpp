@@ -13,21 +13,23 @@ int main()
     bool replay = false;
 
     do {
-        /* Dungeon instance created. */
+        // Dungeon instance created.
         Dungeon room;
         cout << "player y " << room.py << endl;
         cout << "player x " << room.px << endl;
         cout << "winner " << room.winner << endl;
         cout << "loser " << room.loser << endl;
 
-        /* Create the room */
+        // Create the room.
         initRoom( room );
 
-        Monster * mon;
-        mon = new Monster[NUMMONS];
+        cout << "Number of monsters: ";
+        cin >> room.numMons;
+
+        Monster * mon = new Monster[room.numMons];
 
 
-        for( int m=0; m<NUMMONS; m++ ) {
+        for( int m=0; m<room.numMons; m++ ) {
             mon[m].initMon( room );
         }
 
@@ -54,6 +56,7 @@ int main()
             replay = true;
 	else
             replay = false;
+        delete[] mon;
     } while( replay );
 
     cout << "Thank you for playing!" << endl;

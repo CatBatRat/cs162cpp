@@ -2,17 +2,22 @@
 
 using namespace std;
 
-int main() {
+class myArray
+{
+    public:
+        int *arr;
+        myArray( int y, int x )
+        {
+            arr = new int[y*x];
+        }
+};
 
-    cout << "Hello World!" << endl;
-    int size;
-    cin >> size;
-    int *myarray = new int[size];
-    for ( int i=0; i<size; i++ )
-        cin >> *(myarray+i);
-    for ( int i=0; i<size; i++ )
-        cout << *(myarray+i) << " ";
-    delete[] myarray;
+int main()
+{
+
+    myArray a( 5, 6 );
+    cout << a.arr[0];
+    delete &a;
 
     return 0;
 }

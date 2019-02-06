@@ -11,9 +11,9 @@ setup:
 c: $(CC)
 	clang++ -Wall $(CC) -o $(OUT)
 
+t: $(OUT)
+	clear
+	sakura -x ./$(OUT)
 r: $(OUT)
 	clear
 	./$(OUT)
-rt: $(OUT)
-	clear
-	mate-terminal -x ./$(OUT)

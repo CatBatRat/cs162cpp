@@ -1,0 +1,20 @@
+# depslib dependency file v1.0
+1549231647 source:/home/tadrith/lcc/cis162cpp/week4/arraylab/findin.cpp
+	<iostream>
+	"arraylab.hpp"
+
+1549311858 /home/tadrith/lcc/cis162cpp/week4/arraylab/arraylab.hpp
+
+1549315086 source:/home/tadrith/lcc/cis162cpp/week4/arraylab/main.cpp
+	<iostream>
+	<random>
+	"arraylab.hpp"
+
+1549237663 source:/home/tadrith/lcc/cis162cpp/week4/arraylab/sorter.cpp
+	"arraylab.hpp"
+
+1549323114 source:/home/tadrith/lcc/cis162cpp/week4/arraylab/thearray.cpp
+	<iostream>
+	<iomanip>
+	"arraylab.hpp"
+

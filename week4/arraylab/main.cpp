@@ -6,32 +6,28 @@ using namespace std;
 
 int main() {
 
-    srand(static_cast<int>(time(nullptr)));
+    // static_cast because time gives an unsigned int but srand wants an int.
+    srand(static_cast<int>(time(0)));
 
     int size = getSize();
-    int *tarray = new int[size];
-    fillArray( tarray, &size );
-    cout << "The array before sorting is:\n";
-    displayArray( tarray, &size );
-    recSelectionSort(tarray, &size);
-    cout << "The array after sorting is:\n";
-    displayArray( tarray, &size );
-    int input;
-    do
-    {
-        cin >> input;
-        cin.clear();
-        cin.ignore(1000000, '\n');
-        if( input != 0 )
-        {
-            if ( binSearch( tarray, size, input ) )
-                cout << "Found the number you are looking for." << endl;
-            else
-                cout << "That number is not in the array." << endl;
-        }
-    } while( input != 0 );
+
+    // Create a pointer to the address of a new array created in makeArray().
+    int * tarray = makeArray( &size );
+
+    cout << "The list before sorting is:\n";
+    displayArray( tarray, &size, 5 );
+
+    // Sort the array.
+    iterSelectionSort(tarray, &size);
+
+    cout << "The list after sorting is:\n";
+    displayArray( tarray, &size, 5 );
+
+    // Prompt user for input data to search for.
+    findInArray( tarray, &size );
+
+    // Always delete the block of memory when done with it.
     delete[] tarray;
 
     return 0;
 }
-

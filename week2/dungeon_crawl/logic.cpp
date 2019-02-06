@@ -19,8 +19,8 @@ void getMoves( Dungeon & r, Monster * mon ) {
         int y = r.py;
         int x = r.px;
 
-        /* switch on each character of the string the player entered to
-         * determine direction of movement. */
+        // switch on each character of the string the player entered to
+        // determine direction of movement.
         switch( m ) {
             case UP:
                 y--;
@@ -38,20 +38,20 @@ void getMoves( Dungeon & r, Monster * mon ) {
                 cout << "You trip over you own feet because you forgot how to run." << endl;
         }
 
-        /* Checks whether each of the moves entered is valid and breaks the
-         * chain for any that are incorrect. Will still parse the correct parts
-         * that precede the error. (Lends a bit of humor as it can happen in
-         * the middle of movement that the player trips over their own feet.)
-         * */
+        // Checks whether each of the moves entered is valid and breaks the
+        // chain for any that are incorrect. Will still parse the correct parts
+        // that precede the error. (Lends a bit of humor as it can happen in
+        // the middle of movement that the player trips over their own feet.)
+        //
         if( y<DUNY and y>=0 and x<DUNX and x>=0 and checkMove( r, y, x ) ) {
             movePlayer( r, y, x );
-            for( int i=0; i<NUMMONS; i++ ) {
+            for( int i=0; i<r.numMons; i++ ) {
                 mon[i].moveMon( r );
             }
             showRoom( r, "" );
             cout << endl;
-            /* Pauses for a brief period so it looks like the players movement
-             * is being animated across the board. */
+            // Pauses for a brief period so it looks like the players movement
+            // is being animated across the board. */
             _sleep( SPEED );
         }
         else {
@@ -64,11 +64,11 @@ void getMoves( Dungeon & r, Monster * mon ) {
 }
 
 void movePlayer( Dungeon & r, int y, int x ) {
-    /* Previous cords of the player. */
+    // Previous cords of the player.
     r.area[r.py][r.px] = DOT;
-    /* New cords of player on board. */
+    // New cords of player on board.
     r.area[y][x] = PLAYER;
-    /* Recording new cords. */
+    // Recording new cords.
     r.py = y;
     r.px = x;
 }

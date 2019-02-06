@@ -31,24 +31,18 @@ bool isPalindrome(std::string word)
     return recPalindrome( word);
 }
 
-/* Since output needs to start as an empty string, then set the default value
- * of output to "" */
-void recPrintAllSubsets(const std::string & word, std::string output = "", int level = 0 ) {
-    level++;
-    /* Each call to recPrintAllSubsets excludes the first letter of the word,
-     * move each recursive call to the base case. */
+// Since output needs to start as an empty string, then set the default value of
+// output to ""
+void recPrintAllSubsets(const std::string & word, std::string output = "" ) {
+    // Each call to recPrintAllSubsets excludes the first letter of the word,
+    // move each recursive call to the base case.
     if ( word == "" ) {
-        /* couts the current contents of output. */
-        cout << "Level " << level << " output " << output << "  " << endl;
-        cout << "Dropping down to level " << level-1 << endl;
+        // couts the current contents of output.
+        cout << output << "  ";
     }
     else {
-        cout << "Calling first function level " << level << " and passing " << word.substr(1) << endl;
-        cout << "with output " << "\"" << ( ( output == "") ? "empty" : output ) << "\"" << endl;
-        recPrintAllSubsets (word.substr(1), output, level);
-        cout << "Calling second function and passing " << word.substr(1) << endl;
-        cout << "with output " << "\"" << output + word[0] << "\"" << endl;
-        recPrintAllSubsets (word.substr(1), output + word[0], level);
+        recPrintAllSubsets (word.substr(1), output + word[0]);
+        recPrintAllSubsets (word.substr(1), output);
     }
 }
 

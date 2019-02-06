@@ -1,20 +1,20 @@
 # All cpp files here.
 # Additional cpp files here.
-CC=main.cpp selection.cpp binsearch.cpp thearray.cpp
+CC=main.cpp sorter.cpp thearray.cpp findin.cpp
 
 # Additional files including hpp etc.
 ALL=$(CC) arraylab.hpp
 
 # Output file name.
-OUT=out
+OUT=numberfinder
 
 clean:
 	rm $(OUT)
 c: $(CC)
 	clang++ -Wall $(CC) -o $(OUT)
+r: $(OUT)
+	clear
+	./$(OUT)
 rt: $(OUT)
 	clear
 	mate-terminal -x ./$(OUT)
-rc: $(OUT)
-	clear
-	./$(OUT)

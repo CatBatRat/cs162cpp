@@ -1,0 +1,23 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/45968eff/
+ALL	makefile	/^ALL=$(CC) memgame.hpp # All other files go here.$/;"	m
+CC	makefile	/^CC=main.cpp board.cpp play.cpp # Additional cpp files here.$/;"	m
+Game	memgame.hpp	/^struct Game {$/;"	s
+OUT	makefile	/^OUT=out # Replace with your output file.$/;"	m
+__MEM_GAME__	memgame.hpp	/^#define __MEM_GAME__$/;"	d
+c	makefile	/^c: $(CC)$/;"	t
+checked	memgame.hpp	/^    int * checked;$/;"	m	struct:Game	typeref:typename:int *
+displayBoard	board.cpp	/^void displayBoard( Game & b )$/;"	f	typeref:typename:void
+grid	memgame.hpp	/^    int * grid;$/;"	m	struct:Game	typeref:typename:int *
+last	memgame.hpp	/^    int last;$/;"	m	struct:Game	typeref:typename:int
+main	main.cpp	/^int main() {$/;"	f	typeref:typename:int
+makeBoard	board.cpp	/^int * makeBoard( const Game & b )$/;"	f	typeref:typename:int *
+r	makefile	/^r: $(OUT)$/;"	t
+setup	makefile	/^setup:$/;"	t
+size	memgame.hpp	/^    int size;$/;"	m	struct:Game	typeref:typename:int
+t	makefile	/^t: $(OUT)$/;"	t

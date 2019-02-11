@@ -1,20 +1,37 @@
 #include <iostream>
+#include <random>
 #include "memgame.hpp"
 
 using namespace std;
 
-int main() {
+int main()
+{
+    srand(static_cast<int>(time(nullptr)));
 
     Game board;
 
-    cout << "Enter the size of the board" << endl;
-    cin >> board.size;
-    bool red[12] = {};
-    cout << red << endl;
+    do
+    {
+        getSize( board );
+        board.grid = makeBoard( board );
+        board.checked = makeChecked( board );
+        do
+        {
+            displayBoard( board );
+            cout << "Pick the first card you would like to flip." << endl;
+            getMove( board );
+            displayBoard( board );
+            cout << "Now pick the second card." << endl;
+            getMove( board );
+            //displayBoard( board );
+            checkMove( board );
+        } while( !( checkWin( board ) ) );
+        displayBoard( board );
+        cout << "Yay! You won the game!!!" << endl;
 
-    board.grid = makeBoard( board );
-    board.checked = makeBoard( board );
-    displayBoard( board );
+        delete[] board.grid;
+        delete[] board.checked;
+    } while( playAgain( board ) );
 
     return 0;
 }

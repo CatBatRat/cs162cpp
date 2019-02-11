@@ -1,0 +1,15 @@
+# depslib dependency file v1.0
+1549843943 source:/home/tadrith/lcc/cis162cpp/week5/lab5-memory_game/board.cpp
+	<iostream>
+	<random>
+	"memgame.hpp"
+
+1549838922 /home/tadrith/lcc/cis162cpp/week5/lab5-memory_game/memgame.hpp
+	<iostream>
+	<limits>
+
+1549849469 source:/home/tadrith/lcc/cis162cpp/week5/lab5-memory_game/main.cpp
+	<iostream>
+	<random>
+	"memgame.hpp"
+

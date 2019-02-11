@@ -1,0 +1,60 @@
+# depslib dependency file v1.0
+1549701531 source:c:\users\hstum\desktop\winter lcc 2018\cs 162c++\week 1\memory game lab 5\main.cpp
+	<iostream>
+	<iomanip>
+	<stdlib.h>
+	<time.h>
+	"functionDec.h"
+
+1549852061 ec.h"
+
+1549701488 c:\users\hstum\desktop\winter lcc 2018\cs 162c++\week 1\memory game lab 5\functiondec.h
+
+1549699886 source:c:\users\hstum\desktop\winter lcc 2018\cs 162c++\week 1\memory game lab 5\functions.cpp
+	<iostream>
+	<iomanip>
+	<stdlib.h>
+	<time.h>
+	"functionDec.h"
+
+1549851763 source:c:\users\hstum\desktop\winter lcc 2018\cs 162c++\memory game lab 5\functions.cpp
+	<iostream>
+	<iomanip>
+	<stdlib.h>
+	<time.h>
+	"functionDec.h"
+
+1549851689 c:\users\hstum\desktop\winter lcc 2018\cs 162c++\memory game lab 5\functiondec.h
+
+1549852061 source:c:\users\hstum\desktop\winter lcc 2018\cs 162c++\memory game lab 5\main.cpp
+	<iostream>
+	<iomanip>
+	<stdlib.h>
+	<time.h>
+	"functionDec.h"
+
+1549852061 source:c:\users\hstum\desktop\memory game lab 5\main.cpp
+	<iostream>
+	<iomanip>
+	<stdlib.h>
+	<time.h>
+	"functionDec.h"
+
+1549851689 c:\users\hstum\desktop\memory game lab 5\functiondec.h
+
+1549865606 source:/home/tadrith/lcc/cis162cpp/week5/memory game lab 5/functions.cpp
+	<iostream>
+	<iomanip>
+	<stdlib.h>
+	<time.h>
+	"functionDec.h"
+
+1549851690 /home/tadrith/lcc/cis162cpp/week5/memory game lab 5/functionDec.h
+
+1549852062 source:/home/tadrith/lcc/cis162cpp/week5/memory game lab 5/main.cpp
+	<iostream>
+	<iomanip>
+	<stdlib.h>
+	<time.h>
+	"functionDec.h"
+

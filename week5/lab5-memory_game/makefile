@@ -8,12 +8,16 @@ OUT=out # Replace with your output file.
 setup:
 	touch $(ALL)
 
+tags: $(ALL)
+	ctags $(ALL)
+
 c: $(CC)
-	clang++ -Wall $(CC) -o $(OUT)
+	clang++ -Wall -Wextra -Werror -std=c++11 -pedantic $(CC) -o $(OUT)
 
 t: $(OUT)
 	clear
 	kitty --hold ./$(OUT)
-r: $(OUT)
+
+r:
 	clear
 	./$(OUT)

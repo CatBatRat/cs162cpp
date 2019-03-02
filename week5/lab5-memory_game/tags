@@ -9,7 +9,7 @@ ALL	makefile	/^ALL=$(CC) memgame.hpp # All other files go here.$/;"	m
 BIG_NUM	memgame.hpp	/^const long int BIG_NUM = std::numeric_limits<std::streamsize>::max();$/;"	v	typeref:typename:const long int
 CARDNUM	memgame.hpp	/^const int CARDNUM = 8;$/;"	v	typeref:typename:const int
 CARDS	memgame.hpp	/^const char CARDS[CARDNUM] = { '&','$','#','@','?','%','!','+' };$/;"	v	typeref:typename:const char[]
-CC	makefile	/^CC=main.cpp board.cpp play.cpp # Additional cpp files here.$/;"	m
+CC	makefile	/^CC=main.cpp play.cpp board.cpp # Additional cpp files here.$/;"	m
 Game	memgame.hpp	/^    Game(): size(4), last(-1), current(-1), tries(0), matches(0) {}$/;"	f	struct:Game
 Game	memgame.hpp	/^struct Game {$/;"	s
 OUT	makefile	/^OUT=out # Replace with your output file.$/;"	m
@@ -25,6 +25,7 @@ gameExit	play.cpp	/^void gameExit( Game & b )$/;"	f	typeref:typename:void
 getMove	play.cpp	/^void getMove( Game & b )$/;"	f	typeref:typename:void
 getSize	play.cpp	/^void getSize( Game & b )$/;"	f	typeref:typename:void
 grid	memgame.hpp	/^    char * grid;$/;"	m	struct:Game	typeref:typename:char *
+intro	board.cpp	/^void intro()$/;"	f	typeref:typename:void
 last	memgame.hpp	/^    int last;$/;"	m	struct:Game	typeref:typename:int
 main	main.cpp	/^int main()$/;"	f	typeref:typename:int
 makeBoard	board.cpp	/^char * makeBoard( const Game & b )$/;"	f	typeref:typename:char *
@@ -32,9 +33,12 @@ makeChecked	board.cpp	/^bool * makeChecked( const Game & b )$/;"	f	typeref:typen
 matches	memgame.hpp	/^    int matches;$/;"	m	struct:Game	typeref:typename:int
 playAgain	play.cpp	/^bool playAgain( Game & b )$/;"	f	typeref:typename:bool
 r	makefile	/^r:$/;"	t
+resetGame	board.cpp	/^void resetGame( Game & b )$/;"	f	typeref:typename:void
 setup	makefile	/^setup:$/;"	t
 size	memgame.hpp	/^    int size;$/;"	m	struct:Game	typeref:typename:int
 t	makefile	/^t: $(OUT)$/;"	t
+tSize	memgame.hpp	/^    int tSize;$/;"	m	struct:Game	typeref:typename:int
 tags	makefile	/^tags: $(ALL)$/;"	t
 tries	memgame.hpp	/^    int tries;$/;"	m	struct:Game	typeref:typename:int
 waitEnter	play.cpp	/^void waitEnter()$/;"	f	typeref:typename:void
+~Game	memgame.hpp	/^    ~Game() {$/;"	f	struct:Game

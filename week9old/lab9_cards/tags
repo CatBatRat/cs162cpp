@@ -1,0 +1,40 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/45968eff/
+CARDS	PlayingCardDeck.h	/^        static const int CARDS = 13;$/;"	m	class:PlayingCardDeck	typeref:typename:const int
+DECK_SIZE	PlayingCardDeck.h	/^        static const int DECK_SIZE = 52;$/;"	m	class:PlayingCardDeck	typeref:typename:const int
+PlayingCard	PlayingCard.cpp	/^PlayingCard::PlayingCard()$/;"	f	class:PlayingCard
+PlayingCard	PlayingCard.cpp	/^PlayingCard::PlayingCard(char value, char suit)$/;"	f	class:PlayingCard
+PlayingCard	PlayingCard.h	/^class PlayingCard {$/;"	c
+PlayingCardDeck	PlayingCardDeck.cpp	/^PlayingCardDeck::PlayingCardDeck( int numShuffles )$/;"	f	class:PlayingCardDeck
+PlayingCardDeck	PlayingCardDeck.cpp	/^PlayingCardDeck::PlayingCardDeck()$/;"	f	class:PlayingCardDeck
+PlayingCardDeck	PlayingCardDeck.h	/^class PlayingCardDeck {$/;"	c
+SUITS	PlayingCardDeck.h	/^        static const int SUITS = 4;$/;"	m	class:PlayingCardDeck	typeref:typename:const int
+TEST_DECK	main.cpp	/^#define TEST_DECK$/;"	d	file:
+__PLAYING_CARD_DECK__	PlayingCardDeck.h	/^#define __PLAYING_CARD_DECK__$/;"	d
+clearDeck	PlayingCardDeck.cpp	/^void PlayingCardDeck::clearDeck()$/;"	f	class:PlayingCardDeck	typeref:typename:void
+countRemain	PlayingCardDeck.h	/^        int countRemain;$/;"	m	class:PlayingCardDeck	typeref:typename:int
+countUsed	PlayingCardDeck.h	/^        int countUsed;$/;"	m	class:PlayingCardDeck	typeref:typename:int
+dealCard	PlayingCardDeck.cpp	/^PlayingCard * PlayingCardDeck::dealCard()$/;"	f	class:PlayingCardDeck	typeref:typename:PlayingCard *
+getAllCardCodes	PlayingCardDeck.cpp	/^std::string PlayingCardDeck::getAllCardCodes()$/;"	f	class:PlayingCardDeck	typeref:typename:std::string
+getCardCode	PlayingCard.cpp	/^std::string PlayingCard::getCardCode()$/;"	f	class:PlayingCard	typeref:typename:std::string
+getCountRemain	PlayingCardDeck.h	/^        int getCountRemain() { return countRemain; }$/;"	f	class:PlayingCardDeck	typeref:typename:int
+getCountUsed	PlayingCardDeck.h	/^        int getCountUsed() { return countUsed; }$/;"	f	class:PlayingCardDeck	typeref:typename:int
+getSuit	PlayingCard.cpp	/^char PlayingCard::getSuit()$/;"	f	class:PlayingCard	typeref:typename:char
+getValue	PlayingCard.cpp	/^char PlayingCard::getValue()$/;"	f	class:PlayingCard	typeref:typename:char
+isGood	PlayingCard.cpp	/^bool PlayingCard::isGood(char value, char suit)$/;"	f	class:PlayingCard	typeref:typename:bool
+isValid	PlayingCard.cpp	/^bool PlayingCard::isValid()$/;"	f	class:PlayingCard	typeref:typename:bool
+main	main.cpp	/^int main(){$/;"	f	typeref:typename:int
+makeDeck	PlayingCardDeck.cpp	/^void PlayingCardDeck::makeDeck()$/;"	f	class:PlayingCardDeck	typeref:typename:void
+playingcard_h	PlayingCard.h	/^#define playingcard_h$/;"	d
+reset	PlayingCardDeck.cpp	/^void PlayingCardDeck::reset()$/;"	f	class:PlayingCardDeck	typeref:typename:void
+setCard	PlayingCard.cpp	/^bool PlayingCard::setCard (char value, char suit)$/;"	f	class:PlayingCard	typeref:typename:bool
+shuffle	PlayingCardDeck.cpp	/^bool PlayingCardDeck::shuffle(int numShuffles)$/;"	f	class:PlayingCardDeck	typeref:typename:bool
+suit	PlayingCard.h	/^        char suit;$/;"	m	class:PlayingCard	typeref:typename:char
+theDeck	PlayingCardDeck.h	/^        PlayingCard * theDeck[DECK_SIZE];$/;"	m	class:PlayingCardDeck	typeref:typename:PlayingCard * []
+value	PlayingCard.h	/^        char value;$/;"	m	class:PlayingCard	typeref:typename:char
+~PlayingCardDeck	PlayingCardDeck.cpp	/^PlayingCardDeck::~PlayingCardDeck()$/;"	f	class:PlayingCardDeck

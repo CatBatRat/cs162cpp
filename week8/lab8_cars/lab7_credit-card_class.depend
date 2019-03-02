@@ -1,0 +1,25 @@
+# depslib dependency file v1.0
+1550853300 source:/home/tadrith/lcc/cis162cpp/week8/lab8_cars/CarList.cpp
+	<iostream>
+	<string>
+	"CarList.h"
+	<sstream>
+
+1550868278 /home/tadrith/lcc/cis162cpp/week8/lab8_cars/CarList.h
+	<string>
+	"Car.h"
+
+1550693146 /home/tadrith/lcc/cis162cpp/week8/lab8_cars/Car.h
+	<string>
+
+1550784302 source:/home/tadrith/lcc/cis162cpp/week8/lab8_cars/main.cpp
+	<iostream>
+	"Car.h"
+	"Car.h"
+	"CarList.h"
+
+1550693146 source:/home/tadrith/lcc/cis162cpp/week8/lab8_cars/Car.cpp
+	<string>
+	<sstream>
+	"Car.h"
+

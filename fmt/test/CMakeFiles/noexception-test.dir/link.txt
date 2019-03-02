@@ -1,0 +1,2 @@
+/usr/bin/ar qc libnoexception-test.a  CMakeFiles/noexception-test.dir/__/src/format.cc.o
+/usr/bin/ranlib libnoexception-test.a

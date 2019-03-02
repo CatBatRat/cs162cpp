@@ -4,10 +4,32 @@
 
 using namespace std;
 
+void intro()
+{
+    cout << "Welcome to"
+    R"(
+  ____ ____ ____ _________ ____ ____ ____ ____ ____ ____
+ ||T |||h |||e |||       |||M |||e |||m |||o |||r |||y ||
+ ||__|||__|||__|||_______|||__|||__|||__|||__|||__|||__||
+ |/__\|/__\|/__\|/_______\|/__\|/__\|/__\|/__\|/__\|/__\|
+  _________ ____ ____ ____ ____
+ ||       |||G |||a |||m |||e ||
+ ||_______|||__|||__|||__|||__||
+ |/_______\|/__\|/__\|/__\|/__\| )" << "\n\n"
+
+         << "All you have to do is select a card from the grid\n"
+            "and try to find a match.\n\n"
+
+            "To select a card simply input the row and column\n"
+            "\"Y X\" and the game will tell you if they match.\n"
+            "When you find all the matching cards, you WIN!\n\n"
+
+            "Good luck!" << endl;
+}
+
 char * makeBoard( const Game & b )
 {
     int size = b.size*b.size;
-    //char CARDS[] = { '&','$','#','@','?','%','!','+' };
     char * temp = new char[size];
     for( int d=0; d<=size; d++ )
     {
@@ -46,6 +68,9 @@ void displayBoard( Game & b )
     // terminals) so the player's memory is actually tested.
     for( int i=0; i<5000; i++ )
         cout << '\n';
+    cout << "Turns taken = " << b.tries << endl
+         << "Matches made = " << b.matches << " of "
+         << ( (b.size*b.size) / 2 ) - b.matches << endl;
     cout << "   ";
     // Numbers for each column.
     for( int n=0; n<b.size; n++ )
@@ -77,4 +102,13 @@ void cinClear()
 {
     cin.clear();
     cin.ignore(BIG_NUM, '\n');
+}
+
+void resetGame( Game & b )
+{
+        b.size = 4;
+        b.last = -1;
+        b.current = -1;
+        b.tries = 0;
+        b.matches = 0;
 }

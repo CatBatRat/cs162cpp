@@ -39,7 +39,7 @@ void displayArray( int arr[], int * size, int line )
     {
         // I was using a modulo operator here, but I realized how expensive
         // this can be in a large list, so I changed it to an increment count.
-        if( count++ == line )
+        if( count++ >= line )
         {
             count = 1;
             cout << endl;

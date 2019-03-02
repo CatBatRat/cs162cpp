@@ -1,0 +1,88 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/45968eff/
+BlackJackHand	BlackJackHand.cpp	/^BlackJackHand::BlackJackHand()$/;"	f	class:BlackJackHand
+BlackJackHand	BlackJackHand.cpp	/^BlackJackHand::BlackJackHand(PlayingCard *c1, PlayingCard *c2)$/;"	f	class:BlackJackHand
+BlackJackHand	BlackJackHand.h	/^class BlackJackHand$/;"	c
+BlackJackHand_H	BlackJackHand.h	/^#define BlackJackHand_H$/;"	d
+CARDS	PlayingCardDeck.h	/^        static const int CARDS = 13;$/;"	m	class:PlayingCardDeck	typeref:typename:const int
+DEALER_H	Dealer.h	/^#define DEALER_H$/;"	d
+DECK_SIZE	PlayingCardDeck.h	/^        static const int DECK_SIZE = 52;$/;"	m	class:PlayingCardDeck	typeref:typename:const int
+Dealer	Dealer.h	/^class Dealer : public Player$/;"	c
+HANDSIZE	BlackJackHand.h	/^        const static int HANDSIZE = 5;$/;"	m	class:BlackJackHand	typeref:typename:const int
+PLAYER_H	Player.h	/^#define PLAYER_H$/;"	d
+PLAYINGCARDTEST	AllTests.h	/^#define PLAYINGCARDTEST$/;"	d
+Player	Player.h	/^class Player$/;"	c
+PlayingCard	PlayingCard.cpp	/^PlayingCard::PlayingCard()$/;"	f	class:PlayingCard
+PlayingCard	PlayingCard.cpp	/^PlayingCard::PlayingCard(char value, char suit)$/;"	f	class:PlayingCard
+PlayingCard	PlayingCard.h	/^class PlayingCard {$/;"	c
+PlayingCardDeck	PlayingCardDeck.cpp	/^PlayingCardDeck::PlayingCardDeck( int numShuffles )$/;"	f	class:PlayingCardDeck
+PlayingCardDeck	PlayingCardDeck.cpp	/^PlayingCardDeck::PlayingCardDeck()$/;"	f	class:PlayingCardDeck
+PlayingCardDeck	PlayingCardDeck.h	/^class PlayingCardDeck {$/;"	c
+SUITS	PlayingCardDeck.h	/^        static const int SUITS = 4;$/;"	m	class:PlayingCardDeck	typeref:typename:const int
+TEST_DEALER_METHODS	DealerTest.cpp	/^#define TEST_DEALER_METHODS$/;"	d	file:
+TEST_DEFAULT_CONSTRUCTOR	PlayingCardDeckTest.cpp	/^#define TEST_DEFAULT_CONSTRUCTOR$/;"	d	file:
+TEST_DEFAULT_CONSTRUCTOR	PlayingCardTest.cpp	/^#define TEST_DEFAULT_CONSTRUCTOR$/;"	d	file:
+TEST_HAND_WITH_DECK	BlackJackHandTest.cpp	/^#define TEST_HAND_WITH_DECK$/;"	d	file:
+TEST_ISVALID_INVALID_DATA	PlayingCardTest.cpp	/^#define TEST_ISVALID_INVALID_DATA$/;"	d	file:
+TEST_ISVALID_VALID_DATA	PlayingCardTest.cpp	/^#define TEST_ISVALID_VALID_DATA$/;"	d	file:
+TEST_OVLOADED_CONSTRUCTOR	PlayingCardDeckTest.cpp	/^#define TEST_OVLOADED_CONSTRUCTOR$/;"	d	file:
+TEST_OVLOADED_CONSTRUCTOR	PlayingCardTest.cpp	/^#define TEST_OVLOADED_CONSTRUCTOR$/;"	d	file:
+TEST_PLAYER_METHODS	PlayerTest.cpp	/^#define TEST_PLAYER_METHODS$/;"	d	file:
+TEST_SHUFFLE	PlayingCardDeckTest.cpp	/^#define TEST_SHUFFLE$/;"	d	file:
+TEST_TWO_ACES	BlackJackHandTest.cpp	/^#define TEST_TWO_ACES$/;"	d	file:
+__PLAYING_CARD_DECK__	PlayingCardDeck.h	/^#define __PLAYING_CARD_DECK__$/;"	d
+addCard	BlackJackHand.cpp	/^bool BlackJackHand::addCard(PlayingCard *c1)$/;"	f	class:BlackJackHand	typeref:typename:bool
+bet	Player.h	/^	    int bet;$/;"	m	class:Player	typeref:typename:int
+canTakeCard	BlackJackHand.cpp	/^bool BlackJackHand::canTakeCard()$/;"	f	class:BlackJackHand	typeref:typename:bool
+cardCount	BlackJackHand.h	/^        int cardCount;$/;"	m	class:BlackJackHand	typeref:typename:int
+clearDeck	PlayingCardDeck.cpp	/^void PlayingCardDeck::clearDeck()$/;"	f	class:PlayingCardDeck	typeref:typename:void
+clearHand	BlackJackHand.cpp	/^void BlackJackHand::clearHand()$/;"	f	class:BlackJackHand	typeref:typename:void
+countRemain	PlayingCardDeck.h	/^        int countRemain;$/;"	m	class:PlayingCardDeck	typeref:typename:int
+countUsed	PlayingCardDeck.h	/^        int countUsed;$/;"	m	class:PlayingCardDeck	typeref:typename:int
+dealCard	PlayingCardDeck.cpp	/^PlayingCard * PlayingCardDeck::dealCard()$/;"	f	class:PlayingCardDeck	typeref:typename:PlayingCard *
+getAllCardCodes	BlackJackHand.cpp	/^std::string BlackJackHand::getAllCardCodes()$/;"	f	class:BlackJackHand	typeref:typename:std::string
+getAllCardCodes	PlayingCardDeck.cpp	/^std::string PlayingCardDeck::getAllCardCodes()$/;"	f	class:PlayingCardDeck	typeref:typename:std::string
+getBet	BlackJackGame.cpp	/^int getBet(int stake)$/;"	f	typeref:typename:int
+getCardCode	PlayingCard.cpp	/^std::string PlayingCard::getCardCode()$/;"	f	class:PlayingCard	typeref:typename:std::string
+getCardCount	BlackJackHand.cpp	/^int BlackJackHand::getCardCount()$/;"	f	class:BlackJackHand	typeref:typename:int
+getCardIntValue	BlackJackHand.cpp	/^int BlackJackHand::getCardIntValue(char value)$/;"	f	class:BlackJackHand	typeref:typename:int
+getCountRemain	PlayingCardDeck.h	/^        int getCountRemain() { return countRemain; }$/;"	f	class:PlayingCardDeck	typeref:typename:int
+getCountUsed	PlayingCardDeck.h	/^        int getCountUsed() { return countUsed; }$/;"	f	class:PlayingCardDeck	typeref:typename:int
+getHighScore	BlackJackHand.cpp	/^int BlackJackHand::getHighScore()$/;"	f	class:BlackJackHand	typeref:typename:int
+getLowScore	BlackJackHand.cpp	/^int BlackJackHand::getLowScore()$/;"	f	class:BlackJackHand	typeref:typename:int
+getResponse	BlackJackGame.cpp	/^bool getResponse(string question){$/;"	f	typeref:typename:bool
+getStake	BlackJackGame.cpp	/^int getStake(){$/;"	f	typeref:typename:int
+getSuit	PlayingCard.cpp	/^char PlayingCard::getSuit()$/;"	f	class:PlayingCard	typeref:typename:char
+getValue	PlayingCard.cpp	/^char PlayingCard::getValue()$/;"	f	class:PlayingCard	typeref:typename:char
+hand	BlackJackHand.h	/^        PlayingCard * hand[HANDSIZE];$/;"	m	class:BlackJackHand	typeref:typename:PlayingCard * []
+isBust	BlackJackHand.cpp	/^bool BlackJackHand::isBust()$/;"	f	class:BlackJackHand	typeref:typename:bool
+isFull	BlackJackHand.cpp	/^bool BlackJackHand::isFull()$/;"	f	class:BlackJackHand	typeref:typename:bool
+isGood	PlayingCard.cpp	/^bool PlayingCard::isGood(char value, char suit)$/;"	f	class:PlayingCard	typeref:typename:bool
+isValid	PlayingCard.cpp	/^bool PlayingCard::isValid()$/;"	f	class:PlayingCard	typeref:typename:bool
+main	BlackJackGame.cpp	/^int main()$/;"	f	typeref:typename:int
+main	BlackJackHandTest.cpp	/^int main()$/;"	f	typeref:typename:int
+main	DealerTest.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	PlayerTest.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	PlayingCardDeckTest.cpp	/^int main(){$/;"	f	typeref:typename:int
+main	PlayingCardTest.cpp	/^int main()$/;"	f	typeref:typename:int
+makeDeck	PlayingCardDeck.cpp	/^void PlayingCardDeck::makeDeck()$/;"	f	class:PlayingCardDeck	typeref:typename:void
+makeValidCard	PlayingCardTest.cpp	/^PlayingCard makeValidCard(int iValue, int iSuit)$/;"	f	typeref:typename:PlayingCard
+myHand	Player.h	/^		BlackJackHand *myHand;$/;"	m	class:Player	typeref:typename:BlackJackHand *
+playingcard_h	PlayingCard.h	/^#define playingcard_h$/;"	d
+reset	PlayingCardDeck.cpp	/^void PlayingCardDeck::reset()$/;"	f	class:PlayingCardDeck	typeref:typename:void
+setCard	PlayingCard.cpp	/^bool PlayingCard::setCard (char value, char suit)$/;"	f	class:PlayingCard	typeref:typename:bool
+showFullTable	BlackJackGame.cpp	/^void showFullTable(Dealer & dealer, Player & player)$/;"	f	typeref:typename:void
+showTable	BlackJackGame.cpp	/^void showTable(Dealer & dealer, Player & player)$/;"	f	typeref:typename:void
+shuffle	PlayingCardDeck.cpp	/^bool PlayingCardDeck::shuffle(int numShuffles)$/;"	f	class:PlayingCardDeck	typeref:typename:bool
+stake	Player.h	/^	    int stake;$/;"	m	class:Player	typeref:typename:int
+suit	PlayingCard.h	/^        char suit;$/;"	m	class:PlayingCard	typeref:typename:char
+theDeck	Dealer.h	/^        PlayingCardDeck * theDeck;$/;"	m	class:Dealer	typeref:typename:PlayingCardDeck *
+theDeck	PlayingCardDeck.h	/^        PlayingCard * theDeck[DECK_SIZE];$/;"	m	class:PlayingCardDeck	typeref:typename:PlayingCard * []
+value	PlayingCard.h	/^        char value;$/;"	m	class:PlayingCard	typeref:typename:char
+~BlackJackHand	BlackJackHand.cpp	/^BlackJackHand::~BlackJackHand()$/;"	f	class:BlackJackHand
+~PlayingCardDeck	PlayingCardDeck.cpp	/^PlayingCardDeck::~PlayingCardDeck()$/;"	f	class:PlayingCardDeck

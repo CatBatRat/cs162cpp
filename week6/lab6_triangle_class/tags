@@ -1,0 +1,33 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/45968eff/
+ALL	makefile	/^ALL=$(CC) lab6.hpp# All other files go here.$/;"	m
+CC	makefile	/^CC=main.cpp triangle.cpp # Additional cpp files here.$/;"	m
+OUT	makefile	/^OUT=out # Replace with your output file.$/;"	m
+Triangle	lab6.hpp	/^    Triangle( int A, int B, int C )$/;"	f	class:Triangle
+Triangle	lab6.hpp	/^    Triangle(): sideA(3), sideB(4), sideC(5) {}$/;"	f	class:Triangle
+Triangle	lab6.hpp	/^class Triangle$/;"	c
+__LAB6__	lab6.hpp	/^#define __LAB6__$/;"	d
+c	makefile	/^c: $(CC)$/;"	t
+getA	triangle.cpp	/^int Triangle::getA()$/;"	f	class:Triangle	typeref:typename:int
+getB	triangle.cpp	/^int Triangle::getB()$/;"	f	class:Triangle	typeref:typename:int
+getC	triangle.cpp	/^int Triangle::getC()$/;"	f	class:Triangle	typeref:typename:int
+isEquilateral	triangle.cpp	/^bool Triangle::isEquilateral()$/;"	f	class:Triangle	typeref:typename:bool
+isIsosceles	triangle.cpp	/^bool Triangle::isIsosceles()$/;"	f	class:Triangle	typeref:typename:bool
+isRight	triangle.cpp	/^bool Triangle::isRight()$/;"	f	class:Triangle	typeref:typename:bool
+isScalene	triangle.cpp	/^bool Triangle::isScalene()$/;"	f	class:Triangle	typeref:typename:bool
+main	main.cpp	/^int main()$/;"	f	typeref:typename:int
+r	makefile	/^r:$/;"	t
+setA	triangle.cpp	/^void Triangle::setA( int A )$/;"	f	class:Triangle	typeref:typename:void
+setB	triangle.cpp	/^void Triangle::setB( int B )$/;"	f	class:Triangle	typeref:typename:void
+setC	triangle.cpp	/^void Triangle::setC( int C )$/;"	f	class:Triangle	typeref:typename:void
+setup	makefile	/^setup:$/;"	t
+sideA	lab6.hpp	/^    int sideA;$/;"	m	class:Triangle	typeref:typename:int
+sideB	lab6.hpp	/^    int sideB;$/;"	m	class:Triangle	typeref:typename:int
+sideC	lab6.hpp	/^    int sideC;$/;"	m	class:Triangle	typeref:typename:int
+t	makefile	/^t: $(OUT)$/;"	t
+tags	makefile	/^tags: $(ALL)$/;"	t

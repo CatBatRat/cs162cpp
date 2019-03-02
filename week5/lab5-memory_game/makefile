@@ -1,5 +1,5 @@
 # All cpp files here.
-CC=main.cpp board.cpp play.cpp # Additional cpp files here.
+CC=main.cpp play.cpp board.cpp # Additional cpp files here.
 # Additional files including hpp etc.
 ALL=$(CC) memgame.hpp # All other files go here.
 # Output file name.
@@ -12,7 +12,7 @@ tags: $(ALL)
 	ctags $(ALL)
 
 c: $(CC)
-	clang++ -Wall -Wextra -Werror -std=c++11 -pedantic $(CC) -o $(OUT)
+	clang++ -Wall -Wextra -Werror -std=c++11 $(CC) -o $(OUT)
 
 t: $(OUT)
 	clear

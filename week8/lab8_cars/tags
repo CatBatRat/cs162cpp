@@ -1,0 +1,38 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/45968eff/
+Car	Car.cpp	/^Car::Car( string make, string color, int year )$/;"	f	class:Car
+Car	Car.cpp	/^Car::Car():$/;"	f	class:Car
+Car	Car.h	/^class Car {$/;"	c
+CarList	CarList.cpp	/^CarList::CarList()$/;"	f	class:CarList
+CarList	CarList.h	/^class CarList {$/;"	c
+Garage	CarList.h	/^struct Garage {$/;"	s
+TEST_CARLIST	main.cpp	/^#define TEST_CARLIST$/;"	d	file:
+__CARS__	Car.h	/^#define __CARS__$/;"	d
+__CAR_LIST__	CarList.h	/^#define __CAR_LIST__$/;"	d
+addCar	CarList.cpp	/^void CarList::addCar( string make, string color, int year )$/;"	f	class:CarList	typeref:typename:void
+bay	CarList.h	/^    Garage * bay;$/;"	m	class:CarList	typeref:typename:Garage *
+car	CarList.h	/^    Car * car;$/;"	m	struct:Garage	typeref:typename:Car *
+clearCars	CarList.cpp	/^void CarList::clearCars(Garage * cars)$/;"	f	class:CarList	typeref:typename:void
+color	Car.h	/^    string color;$/;"	m	class:Car	typeref:typename:string
+displayList	CarList.cpp	/^std::string CarList::displayList()$/;"	f	class:CarList	typeref:typename:std::string
+findCar	CarList.cpp	/^bool CarList::findCar(string make, string color, int year)$/;"	f	class:CarList	typeref:typename:bool
+getColor	Car.h	/^    string getColor() { return color; }$/;"	f	class:Car	typeref:typename:string
+getMake	Car.h	/^    string getMake() { return make; }$/;"	f	class:Car	typeref:typename:string
+getYear	Car.h	/^    int getYear() { return year; }$/;"	f	class:Car	typeref:typename:int
+main	main.cpp	/^int main()$/;"	f	typeref:typename:int
+make	Car.h	/^    string make;$/;"	m	class:Car	typeref:typename:string
+next	CarList.h	/^    Garage * next;$/;"	m	struct:Garage	typeref:typename:Garage *
+operator <<	Car.cpp	/^std::ostream & operator<<( std::ostream & out, Car & o )$/;"	f	typeref:typename:std::ostream &
+operator ==	Car.cpp	/^bool Car::operator==( Car & t )$/;"	f	class:Car	typeref:typename:bool
+recFind	CarList.cpp	/^bool CarList::recFind(Garage * ptr, Car & fnd)$/;"	f	class:CarList	typeref:typename:bool
+removeHead	CarList.cpp	/^Car * CarList::removeHead()$/;"	f	class:CarList	typeref:typename:Car *
+setColor	Car.h	/^    void   setColor( string color ) { this->color = color; }$/;"	f	class:Car	typeref:typename:void
+setMake	Car.h	/^    void   setMake( string make ) { this->make = make; }$/;"	f	class:Car	typeref:typename:void
+setYear	Car.h	/^    void   setYear( int year ) { this->year = year; }$/;"	f	class:Car	typeref:typename:void
+year	Car.h	/^    int year;$/;"	m	class:Car	typeref:typename:int
+~CarList	CarList.cpp	/^CarList::~CarList()$/;"	f	class:CarList

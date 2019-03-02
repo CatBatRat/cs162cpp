@@ -1,0 +1,34 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/45968eff/
+AREA_H	Area.h	/^#define AREA_H$/;"	d
+Area	Area.cpp	/^Area::Area()$/;"	f	class:Area
+Area	Area.cpp	/^Area::Area(float s, float r)$/;"	f	class:Area
+Area	Area.h	/^class Area$/;"	c
+CIRCLE_H	Circle.h	/^#define CIRCLE_H$/;"	d
+Circle	Circle.cpp	/^Circle::Circle()$/;"	f	class:Circle
+Circle	Circle.cpp	/^Circle::Circle(float r)$/;"	f	class:Circle
+Circle	Circle.h	/^class Circle$/;"	c
+PI	Circle.h	/^        constexpr static float PI = 3.14159;$/;"	m	class:Circle	typeref:typename:float
+SQUARE_H	Square.h	/^#define SQUARE_H$/;"	d
+Square	Square.cpp	/^Square::Square()$/;"	f	class:Square
+Square	Square.cpp	/^Square::Square(float s)$/;"	f	class:Square
+Square	Square.h	/^class Square$/;"	c
+ci	Area.h	/^        Circle ci;$/;"	m	class:Area	typeref:typename:Circle
+getArea	Area.cpp	/^float Area::getArea()$/;"	f	class:Area	typeref:typename:float
+getArea	Circle.cpp	/^float Circle::getArea()$/;"	f	class:Circle	typeref:typename:float
+getArea	Square.cpp	/^float Square::getArea()$/;"	f	class:Square	typeref:typename:float
+getRadius	Circle.cpp	/^float Circle::getRadius()$/;"	f	class:Circle	typeref:typename:float
+getSide	Square.cpp	/^float Square::getSide()$/;"	f	class:Square	typeref:typename:float
+main	main.cpp	/^int main()$/;"	f	typeref:typename:int
+radius	Circle.h	/^        float radius;$/;"	m	class:Circle	typeref:typename:float
+setRadius	Area.cpp	/^void Area::setRadius(float r)$/;"	f	class:Area	typeref:typename:void
+setRadius	Circle.cpp	/^void Circle::setRadius(float r)$/;"	f	class:Circle	typeref:typename:void
+setSide	Area.cpp	/^void Area::setSide(float s)$/;"	f	class:Area	typeref:typename:void
+setSide	Square.cpp	/^void Square::setSide(float s)$/;"	f	class:Square	typeref:typename:void
+side	Square.h	/^        float side;$/;"	m	class:Square	typeref:typename:float
+sq	Area.h	/^        Square sq;$/;"	m	class:Area	typeref:typename:Square

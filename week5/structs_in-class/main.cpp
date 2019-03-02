@@ -14,7 +14,8 @@ bool findItem( Link * head, int value );
 int getHead( Link * head );
 bool isEmpty( Link * head );
 
-int main() {
+int main()
+{
 
     Link * head = nullptr;
 
@@ -79,4 +80,14 @@ int getHead( Link * head )
 bool isEmpty( Link * head )
 {
     return (head)?true:false;
+}
+
+void deleteList( Link * head )
+{
+    if( head )
+    {
+        deleteList( head->next );
+        delete head;
+    }
+
 }

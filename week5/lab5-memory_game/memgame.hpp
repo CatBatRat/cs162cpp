@@ -7,8 +7,10 @@
 const int CARDNUM = 8;
 const char CARDS[CARDNUM] = { '&','$','#','@','?','%','!','+' };
 const long int BIG_NUM = std::numeric_limits<std::streamsize>::max();
+
 struct Game {
     int size;
+    int tSize;
     int last;
     int current;
     int tries;
@@ -17,6 +19,10 @@ struct Game {
     bool * checked;
 
     Game(): size(4), last(-1), current(-1), tries(0), matches(0) {}
+    ~Game() {
+        delete[] grid;
+        delete[] checked;
+    }
 };
 
 
@@ -50,6 +56,7 @@ void gameExit( Game & board );
 
 // ~board.cpp~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+// Shows a basic intro for the game.
 void intro();
 // Makes the base board that the symbols for the game will be matched from.
 // The array is filled using a list of chars acting as the cards. The cards are
@@ -71,6 +78,8 @@ void displayBoard( Game & board );
 // a loop before checking an condition and it will prevent any errors due from
 // cin.fail().
 void cinClear();
+// Reset the game back to it's starting values.
+void resetGame( Game & board );
 
 
 #endif //__MEM_GAME__

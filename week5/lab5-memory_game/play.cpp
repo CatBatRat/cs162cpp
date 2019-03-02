@@ -63,6 +63,7 @@ void checkMove( Game & b )
                     "That's the same card twice!" << endl;
     else if( b.grid[b.last] == b.grid[b.current] )
     {
+        displayBoard( b );
         cout << "Those cards match!" << endl;
         b.checked[b.last] = true;
         b.checked[b.current] = true;
@@ -95,11 +96,7 @@ bool playAgain( Game & b )
     cin >> play;
     if( play == 'y' )
     {
-        b.size = 4;
-        b.last = -1;
-        b.current = -1;
-        b.tries = 0;
-        b.matches = 0;
+        resetGame( b );
         return true;
     }
     else

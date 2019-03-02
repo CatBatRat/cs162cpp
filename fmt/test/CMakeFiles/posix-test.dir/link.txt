@@ -1,1 +1,0 @@
-/usr/bin/c++  -O3 -DNDEBUG   CMakeFiles/posix-test.dir/posix-test.cc.o  -o ../bin/posix-test libtest-main.a libgmock.a -lpthread ../libfmt.a 

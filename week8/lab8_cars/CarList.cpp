@@ -1,5 +1,6 @@
 #include <iostream>
 #include <string>
+#include <sstream>
 #include "CarList.h"
 
 using std::string;
@@ -20,13 +21,13 @@ CarList::CarList()
     bay = nullptr;
 }
 
-// destructor, deletes items, using recursion
+// Calls recursive function clearCars()
 CarList::~CarList()
 {
     clearCars(bay);
 }
 
-// recursive method to walk down list, deleting items starting at tail
+// Recursively crushes all cars in Garage Before the garage gets burned down.
 void CarList::clearCars(Garage * cars)
 {
     if ( cars )
@@ -39,20 +40,20 @@ void CarList::clearCars(Garage * cars)
 
 // recursive method to search the list
 // uses overloaded equality operator in Car
-bool CarList::recFind(Garage * ptr, Car & fnd)
+bool CarList::recFind(const Garage * ptr, const Car & fnd) const
 {
     if ( ptr == nullptr )
         return false;
 
-    if (*ptr->car == fnd)
+    if (*(ptr)->car == fnd)
         return true;
 
     return recFind(ptr->next, fnd);
 }
 
 // creates a new car on heap
-//creates new link
-//adds link to head of list
+// creates new link
+// adds link to head of list
 void CarList::addCar( string make, string color, int year )
 {
     Car * tempCar = new Car(make,color,year);
@@ -89,7 +90,7 @@ Car * CarList::removeHead()
 
 // build a sring  by walking down the list
 // uses overloaded extraction operator in Car
-std::string CarList::displayList()
+string CarList::displayList()
 {
     std::stringstream buffer;
 
@@ -99,7 +100,7 @@ std::string CarList::displayList()
         // until done with list
     while ( ptr )
     {
-        buffer << *ptr->car << ", ";
+        buffer << *(ptr)->car << ", ";
         ptr = ptr->next;
     }
 
@@ -107,3 +108,33 @@ std::string CarList::displayList()
     return buffer.str();
 }
 
+// Optionally add more cars to list based on user input.
+void CarList::moreCars( string m, string c, int y )
+{
+    bool more = false;
+    string input = "";
+    do {
+        std::stringstream out;
+        std::cout << "\nIf you would like to add any additional cars\n"
+                     "please do so now. Leave blank to continue\n"
+                     "with the current/new contents of the list.\n"
+                     "New cars should be in the format:\n"
+                     "\n<Make>, <Color>, <Year>"<< std::endl;
+        std::getline( std::cin, input );
+        out << input;
+        out >> m;
+        if( input != "" ){
+            out >> c >> y;
+            if( y ) {
+                addCar(m,c,y);
+            }
+            else {
+                std::cout << "Invalid input. Please try again."
+                    << std::endl;
+            }
+        }
+        else
+            more = true;
+        input = "";
+    } while( !more );
+}

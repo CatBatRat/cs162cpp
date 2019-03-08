@@ -14,13 +14,13 @@ struct Garage {
 
 class CarList {
     Garage * bay;
-    bool recFind(Garage * ptr, Car & fnd);
+    bool recFind(const Garage * ptr, const Car & fnd) const;
     void clearCars(Garage * cars);
-    //void recDestruct(Garage * ptr);
 public:
     CarList();
     ~CarList();
     void addCar( string make, string color, int year );
+    void moreCars( string m = "", string c = "", int y = 0 );
     string displayList();
     Car * removeHead();
     bool findCar(string make, string color, int year);

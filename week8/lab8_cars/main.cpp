@@ -79,6 +79,8 @@ int main()
     theList.addCar("Honda", "Blue", 2010);
     theList.addCar("Chevy", "Green", 2012);
 
+    theList.moreCars();
+
     cout << "Display list, should be: " << endl;
     cout << " 2012 Green Chevy, 2010 Blue Honda, 2017 White Ford, 1992 Yellow Taxi, " << endl;
     cout << "Actualy is: " << endl;

@@ -15,7 +15,7 @@ CreditCard	CreditCard.hpp	/^    CreditCard(): cardNum(0), creditLimit(0), balanc
 CreditCard	CreditCard.hpp	/^class CreditCard {$/;"	c
 OUT	makefile	/^OUT=out # Replace with your output file.$/;"	m
 PERSON_TEST	main.cpp	/^#define PERSON_TEST$/;"	d	file:
-Person	Person.h	/^    Person( string firstName, string lastName, string address ):$/;"	f	class:Person
+Person	Person.h	/^    Person( string fName, string lName, string address ):$/;"	f	class:Person
 Person	Person.h	/^    Person(): firstName(""), lastName(""), address("") {}$/;"	f	class:Person
 Person	Person.h	/^class Person {$/;"	c
 Person	Person.hpp	/^    Person( string firstName, string lastName, string address ):$/;"	f	class:Person
@@ -61,14 +61,14 @@ pe	CreditCard.hpp	/^    Person pe;$/;"	m	class:CreditCard	typeref:typename:Perso
 r	makefile	/^r:$/;"	t
 setAddress	CreditCard.h	/^    void   setAddress( string A ) { pe.setAddress(A); }$/;"	f	class:CreditCard	typeref:typename:void
 setAddress	CreditCard.hpp	/^    void   setAddress( string A ) { pe.setAddress(A); }$/;"	f	class:CreditCard	typeref:typename:void
-setAddress	Person.h	/^    void   setAddress(string A) { address = A; }$/;"	f	class:Person	typeref:typename:void
+setAddress	Person.h	/^    void   setAddress(string address) { this->address = address; }$/;"	f	class:Person	typeref:typename:void
 setAddress	Person.hpp	/^    void   setAddress(string A) { address = A; }$/;"	f	class:Person	typeref:typename:void
 setCardNumber	CreditCard.h	/^    void   setCardNumber( int cNum ) { cardNum = cNum; }$/;"	f	class:CreditCard	typeref:typename:void
 setCardNumber	CreditCard.hpp	/^    void   setCardNumber( int cNum ) { cardNum = cNum; }$/;"	f	class:CreditCard	typeref:typename:void
 setCreditLimit	CreditCard.cpp	/^void CreditCard::setCreditLimit( double creditLimit ) {$/;"	f	class:CreditCard	typeref:typename:void
-setFirstName	Person.h	/^    void   setFirstName(string F) { firstName = F; }$/;"	f	class:Person	typeref:typename:void
+setFirstName	Person.h	/^    void   setFirstName(string firstName) { this->firstName = firstName; }$/;"	f	class:Person	typeref:typename:void
 setFirstName	Person.hpp	/^    void   setFirstName(string F) { firstName = F; }$/;"	f	class:Person	typeref:typename:void
-setLastName	Person.h	/^    void   setLastName(string L) { lastName = L; }$/;"	f	class:Person	typeref:typename:void
+setLastName	Person.h	/^    void   setLastName(string lastName) { this->lastName = lastName; }$/;"	f	class:Person	typeref:typename:void
 setLastName	Person.hpp	/^    void   setLastName(string L) { lastName = L; }$/;"	f	class:Person	typeref:typename:void
 setOwnerName	CreditCard.cpp	/^void CreditCard::setOwnerName( string F, string L ) {$/;"	f	class:CreditCard	typeref:typename:void
 setup	makefile	/^setup:$/;"	t

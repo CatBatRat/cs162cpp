@@ -1,5 +1,5 @@
 #include <string>
-#include <sstream>
+#include <iostream>
 #include "Car.h"
 
 using std::string;
@@ -13,15 +13,15 @@ Car::Car( string make, string color, int year )
     setYear(year);
 }
 
-bool Car::operator==( Car & t )
+bool Car::operator==( const Car & t ) const
 {
     if( t.make == make and t.color == color and t.year == year )
         return true;
     return false;
 }
 
-std::ostream & operator<<( std::ostream & out, Car & o )
+std::ostream & operator<<( std::ostream & out, const Car & o )
 {
-    out << o.getMake() << " " << o.getYear() << " " << o.getColor();
+    out << o.year << " " << o.color << " " << o.make;
     return out;
 }

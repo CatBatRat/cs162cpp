@@ -40,15 +40,15 @@ void CarList::clearCars(Garage * cars)
 
 // recursive method to search the list
 // uses overloaded equality operator in Car
-bool CarList::recFind(const Garage * ptr, const Car & fnd) const
+bool CarList::recFind(const Garage * car, const Car & fcar) const
 {
-    if ( ptr == nullptr )
+    if ( car == nullptr )
         return false;
 
-    if (*(ptr)->car == fnd)
+    if (*(car)->car == fcar)
         return true;
 
-    return recFind(ptr->next, fnd);
+    return recFind(car->next, fcar);
 }
 
 // creates a new car on heap
@@ -63,12 +63,12 @@ void CarList::addCar( string make, string color, int year )
     bay = tempLink;
 }
 
-// look for a car on the list
-// create an instance of it, use recursive method to see if there
+// look for a car on the list, create an instance of it, use recursive recFind
+// to return the result.
 bool CarList::findCar(string make, string color, int year)
 {
-    Car fnd(make,color,year);
-    return recFind(bay, fnd);
+    Car fcar(make,color,year);
+    return recFind(bay, fcar);
 }
 
 // remove the item at head and return its value
@@ -109,6 +109,7 @@ string CarList::displayList()
 }
 
 // Optionally add more cars to list based on user input.
+// Uncomment ADDITIONAL_CARS define in main.cpp to use.
 void CarList::moreCars( string m, string c, int y )
 {
     bool more = false;
@@ -116,8 +117,9 @@ void CarList::moreCars( string m, string c, int y )
     do {
         std::stringstream out;
         std::cout << "\nIf you would like to add any additional cars\n"
-                     "please do so now. Leave blank to continue\n"
-                     "with the current/new contents of the list.\n"
+                     "please do so now.\n"
+                     "Leave blank to continue with the current/new\n"
+                     "contents of the list.\n"
                      "New cars should be in the format:\n"
                      "\n<Make>, <Color>, <Year>"<< std::endl;
         std::getline( std::cin, input );

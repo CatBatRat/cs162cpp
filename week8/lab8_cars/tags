@@ -11,6 +11,7 @@ Car	Car.h	/^class Car {$/;"	c
 CarList	CarList.cpp	/^CarList::CarList()$/;"	f	class:CarList
 CarList	CarList.h	/^class CarList {$/;"	c
 Garage	CarList.h	/^struct Garage {$/;"	s
+TEST_CAR	main.cpp	/^#define TEST_CAR$/;"	d	file:
 TEST_CARLIST	main.cpp	/^#define TEST_CARLIST$/;"	d	file:
 __CARS__	Car.h	/^#define __CARS__$/;"	d
 __CAR_LIST__	CarList.h	/^#define __CAR_LIST__$/;"	d
@@ -30,7 +31,7 @@ moreCars	CarList.cpp	/^void CarList::moreCars( string m, string c, int y )$/;"	f
 next	CarList.h	/^    Garage * next;$/;"	m	struct:Garage	typeref:typename:Garage *
 operator <<	Car.cpp	/^std::ostream & operator<<( std::ostream & out, const Car & o )$/;"	f	typeref:typename:std::ostream &
 operator ==	Car.cpp	/^bool Car::operator==( const Car & t ) const$/;"	f	class:Car	typeref:typename:bool
-recFind	CarList.cpp	/^bool CarList::recFind(const Garage * ptr, const Car & fnd) const$/;"	f	class:CarList	typeref:typename:bool
+recFind	CarList.cpp	/^bool CarList::recFind(const Garage * car, const Car & fcar) const$/;"	f	class:CarList	typeref:typename:bool
 removeHead	CarList.cpp	/^Car * CarList::removeHead()$/;"	f	class:CarList	typeref:typename:Car *
 setColor	Car.h	/^    void   setColor( string color ) { this->color = color; }$/;"	f	class:Car	typeref:typename:void
 setMake	Car.h	/^    void   setMake( string make ) { this->make = make; }$/;"	f	class:Car	typeref:typename:void

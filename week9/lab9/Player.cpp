@@ -36,7 +36,7 @@ int Player::getHighScore() {
 
 // returns high score unless it is over 21, then it returns the lowScore
 int Player::getScore() {
-    if( myHand->getHighScore() > 21 )
+    if( myHand->getHighScore() <= 21 )
         return myHand->getHighScore();
     return myHand->getLowScore();
 }

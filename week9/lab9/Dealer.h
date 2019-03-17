@@ -10,13 +10,13 @@ class Dealer : public Player
         PlayingCardDeck * theDeck;
 
     public:
-    	Dealer();
-    	Dealer(int numShuffles);
-        ~Dealer();
+        Dealer() { theDeck = new PlayingCardDeck; }
+        Dealer(int numShuffles) { theDeck = new PlayingCardDeck( numShuffles ); }
+        ~Dealer() { delete theDeck; }
         std::string showHand();
-        std::string fullHand();
-        PlayingCard * dealCard();
-        int cardsLeft();
+        std::string fullHand() { return myHand->getAllCardCodes(); }
+        PlayingCard * dealCard() { return theDeck->dealCard(); }
+        int cardsLeft() { return theDeck->getCountRemain(); }
         void shuffle();
 };
 

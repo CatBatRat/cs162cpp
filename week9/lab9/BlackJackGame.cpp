@@ -3,6 +3,7 @@
 #include <iostream>
 #include <time.h>
 #include <limits>
+#include <cstdio>
 #include "Player.h"
 #include "Dealer.h"
 

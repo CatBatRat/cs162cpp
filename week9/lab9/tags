@@ -1,0 +1,97 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_OUTPUT_MODE	u-ctags	/u-ctags or e-ctags/
+!_TAG_PROGRAM_AUTHOR	Universal Ctags Team	//
+!_TAG_PROGRAM_NAME	Universal Ctags	/Derived from Exuberant Ctags/
+!_TAG_PROGRAM_URL	https://ctags.io/	/official site/
+!_TAG_PROGRAM_VERSION	0.0.0	/45968eff/
+ALL	makefile	/^ALL=$(BASE) $(PLAYER) $(DEALER) $(GAME) #Dealer.hpp # All other files go here.$/;"	m
+BASE	makefile	/^BASE=Player.cpp Dealer.cpp PlayingCard.cpp BlackJackHand.cpp PlayingCardDeck.cpp$/;"	m
+BlackJackHand	BlackJackHand.cpp	/^BlackJackHand::BlackJackHand()$/;"	f	class:BlackJackHand
+BlackJackHand	BlackJackHand.cpp	/^BlackJackHand::BlackJackHand(PlayingCard *c1, PlayingCard *c2)$/;"	f	class:BlackJackHand
+COMP	makefile	/^COMP=clang++ -Wall -Wextra -Werror -std=c++11 $(BASE)$/;"	m
+DEALER	makefile	/^DEALER=DealerTest.cpp$/;"	m
+DEALER_H	Dealer.h	/^#define DEALER_H$/;"	d
+Dealer	Dealer.cpp	/^Dealer::Dealer() {$/;"	f	class:Dealer
+Dealer	Dealer.cpp	/^Dealer::Dealer(int numShuffles) {$/;"	f	class:Dealer
+Dealer	Dealer.h	/^class Dealer : public Player$/;"	c
+GAME	makefile	/^GAME=BlackJackGame.cpp$/;"	m
+PLAYER	makefile	/^PLAYER=PlayerTest.cpp$/;"	m
+Player	Player.cpp	/^Player::Player( int stake ): stake(stake) {$/;"	f	class:Player
+Player	Player.cpp	/^Player::Player(): stake(0) {$/;"	f	class:Player
+Player	Player.h	/^class Player {$/;"	c
+PlayingCard	PlayingCard.cpp	/^PlayingCard::PlayingCard()$/;"	f	class:PlayingCard
+PlayingCard	PlayingCard.cpp	/^PlayingCard::PlayingCard(char value, char suit)$/;"	f	class:PlayingCard
+PlayingCardDeck	PlayingCardDeck.cpp	/^PlayingCardDeck::PlayingCardDeck()$/;"	f	class:PlayingCardDeck
+PlayingCardDeck	PlayingCardDeck.cpp	/^PlayingCardDeck::PlayingCardDeck(int numshuffles)$/;"	f	class:PlayingCardDeck
+TEST_DEALER_METHODS	DealerTest.cpp	/^#define TEST_DEALER_METHODS$/;"	d	file:
+TEST_HAND_METHODS	DealerTest.cpp	/^#define TEST_HAND_METHODS$/;"	d	file:
+TEST_HAND_METHODS	PlayerTest.cpp	/^#define TEST_HAND_METHODS$/;"	d	file:
+TEST_PLAYER_METHODS	PlayerTest.cpp	/^#define TEST_PLAYER_METHODS$/;"	d	file:
+__PLAYER__	Player.h	/^#define __PLAYER__$/;"	d
+addCard	BlackJackHand.cpp	/^bool BlackJackHand::addCard(PlayingCard *c1)$/;"	f	class:BlackJackHand	typeref:typename:bool
+bet	Player.h	/^    int bet;$/;"	m	class:Player	typeref:typename:int
+busted	Player.cpp	/^bool Player::busted() {return myHand->isBust();}$/;"	f	class:Player	typeref:typename:bool
+canTakeCard	BlackJackHand.cpp	/^bool BlackJackHand::canTakeCard()$/;"	f	class:BlackJackHand	typeref:typename:bool
+cardsLeft	Dealer.cpp	/^int Dealer::cardsLeft() {$/;"	f	class:Dealer	typeref:typename:int
+clearDeck	PlayingCardDeck.cpp	/^void PlayingCardDeck::clearDeck()$/;"	f	class:PlayingCardDeck	typeref:typename:void
+clearHand	BlackJackHand.cpp	/^void BlackJackHand::clearHand()$/;"	f	class:BlackJackHand	typeref:typename:void
+clearHand	Player.cpp	/^void Player::clearHand() {$/;"	f	class:Player	typeref:typename:void
+dealCard	Dealer.cpp	/^PlayingCard * Dealer::dealCard() {$/;"	f	class:Dealer	typeref:typename:PlayingCard *
+dealCard	PlayingCardDeck.cpp	/^PlayingCard * PlayingCardDeck::dealCard()$/;"	f	class:PlayingCardDeck	typeref:typename:PlayingCard *
+dealer	makefile	/^dealer: $(DEALER)$/;"	t
+deleteDeck	PlayingCardDeck.cpp	/^void PlayingCardDeck::deleteDeck()$/;"	f	class:PlayingCardDeck	typeref:typename:void
+fullHand	Dealer.cpp	/^std::string Dealer::fullHand() {$/;"	f	class:Dealer	typeref:typename:std::string
+game	makefile	/^game: $(GAME)$/;"	t
+getAllCardCodes	BlackJackHand.cpp	/^std::string BlackJackHand::getAllCardCodes()$/;"	f	class:BlackJackHand	typeref:typename:std::string
+getAllCardCodes	PlayingCardDeck.cpp	/^std::string PlayingCardDeck::getAllCardCodes()$/;"	f	class:PlayingCardDeck	typeref:typename:std::string
+getBet	BlackJackGame.cpp	/^int getBet(int stake)$/;"	f	typeref:typename:int
+getCardCode	PlayingCard.cpp	/^std::string PlayingCard::getCardCode()$/;"	f	class:PlayingCard	typeref:typename:std::string
+getCardCount	BlackJackHand.cpp	/^int BlackJackHand::getCardCount()$/;"	f	class:BlackJackHand	typeref:typename:int
+getCardIntValue	BlackJackHand.cpp	/^int BlackJackHand::getCardIntValue(char value)$/;"	f	class:BlackJackHand	typeref:typename:int
+getCountRemain	PlayingCardDeck.cpp	/^int PlayingCardDeck::getCountRemain()$/;"	f	class:PlayingCardDeck	typeref:typename:int
+getCountUsed	PlayingCardDeck.cpp	/^int PlayingCardDeck::getCountUsed()$/;"	f	class:PlayingCardDeck	typeref:typename:int
+getHighScore	BlackJackHand.cpp	/^int BlackJackHand::getHighScore()$/;"	f	class:BlackJackHand	typeref:typename:int
+getHighScore	Player.cpp	/^int Player::getHighScore() {$/;"	f	class:Player	typeref:typename:int
+getLowScore	BlackJackHand.cpp	/^int BlackJackHand::getLowScore()$/;"	f	class:BlackJackHand	typeref:typename:int
+getLowScore	Player.cpp	/^int Player::getLowScore() {$/;"	f	class:Player	typeref:typename:int
+getResponse	BlackJackGame.cpp	/^bool getResponse(string question){$/;"	f	typeref:typename:bool
+getScore	Player.cpp	/^int Player::getScore() {$/;"	f	class:Player	typeref:typename:int
+getStake	BlackJackGame.cpp	/^int getStake(){$/;"	f	typeref:typename:int
+getStake	Player.cpp	/^int  Player::getStake() {$/;"	f	class:Player	typeref:typename:int
+getSuit	PlayingCard.cpp	/^char PlayingCard::getSuit()$/;"	f	class:PlayingCard	typeref:typename:char
+getValue	PlayingCard.cpp	/^char PlayingCard::getValue()$/;"	f	class:PlayingCard	typeref:typename:char
+isBust	BlackJackHand.cpp	/^bool BlackJackHand::isBust()$/;"	f	class:BlackJackHand	typeref:typename:bool
+isFull	BlackJackHand.cpp	/^bool BlackJackHand::isFull()$/;"	f	class:BlackJackHand	typeref:typename:bool
+isGood	PlayingCard.cpp	/^bool PlayingCard::isGood(char value, char suit)$/;"	f	class:PlayingCard	typeref:typename:bool
+isValid	PlayingCard.cpp	/^bool PlayingCard::isValid()$/;"	f	class:PlayingCard	typeref:typename:bool
+lost	Player.cpp	/^void Player::lost() {$/;"	f	class:Player	typeref:typename:void
+main	BlackJackGame.cpp	/^int main()$/;"	f	typeref:typename:int
+main	DealerTest.cpp	/^int main() {$/;"	f	typeref:typename:int
+main	PlayerTest.cpp	/^int main() {$/;"	f	typeref:typename:int
+makeBet	Player.cpp	/^bool Player::makeBet(int bet) {$/;"	f	class:Player	typeref:typename:bool
+makeDeck	PlayingCardDeck.cpp	/^void PlayingCardDeck::makeDeck()$/;"	f	class:PlayingCardDeck	typeref:typename:void
+myHand	Player.h	/^    BlackJackHand * myHand;$/;"	m	class:Player	typeref:typename:BlackJackHand *
+player	makefile	/^player: $(PLAYER)$/;"	t
+r	makefile	/^r:$/;"	t
+reset	PlayingCardDeck.cpp	/^void PlayingCardDeck::reset()$/;"	f	class:PlayingCardDeck	typeref:typename:void
+setCard	PlayingCard.cpp	/^bool PlayingCard::setCard (char value, char suit)$/;"	f	class:PlayingCard	typeref:typename:bool
+setStake	Player.cpp	/^void Player::setStake(int stake) {$/;"	f	class:Player	typeref:typename:void
+setup	makefile	/^setup:$/;"	t
+showFullTable	BlackJackGame.cpp	/^void showFullTable(Dealer & dealer, Player & player)$/;"	f	typeref:typename:void
+showHand	Dealer.cpp	/^std::string Dealer::showHand() {$/;"	f	class:Dealer	typeref:typename:std::string
+showHand	Player.cpp	/^std::string Player::showHand() {$/;"	f	class:Player	typeref:typename:std::string
+showTable	BlackJackGame.cpp	/^void showTable(Dealer & dealer, Player & player)$/;"	f	typeref:typename:void
+shuffle	Dealer.cpp	/^void Dealer::shuffle() {$/;"	f	class:Dealer	typeref:typename:void
+shuffle	PlayingCardDeck.cpp	/^bool PlayingCardDeck::shuffle(int numshuffles)$/;"	f	class:PlayingCardDeck	typeref:typename:bool
+stake	Player.h	/^    int stake;$/;"	m	class:Player	typeref:typename:int
+t	makefile	/^t: $(OUT)$/;"	t
+tags	makefile	/^tags: $(ALL)$/;"	t
+takeCard	Player.cpp	/^bool Player::takeCard(PlayingCard * c) {$/;"	f	class:Player	typeref:typename:bool
+theDeck	Dealer.h	/^        PlayingCardDeck * theDeck;$/;"	m	class:Dealer	typeref:typename:PlayingCardDeck *
+wantCard	Player.cpp	/^bool Player::wantCard() {return myHand->canTakeCard();}$/;"	f	class:Player	typeref:typename:bool
+won	Player.cpp	/^void Player::won() {$/;"	f	class:Player	typeref:typename:void
+~BlackJackHand	BlackJackHand.cpp	/^BlackJackHand::~BlackJackHand()$/;"	f	class:BlackJackHand
+~Dealer	Dealer.cpp	/^Dealer::~Dealer() {$/;"	f	class:Dealer
+~Player	Player.cpp	/^Player::~Player() {$/;"	f	class:Player
+~PlayingCardDeck	PlayingCardDeck.cpp	/^PlayingCardDeck::~PlayingCardDeck()$/;"	f	class:PlayingCardDeck
